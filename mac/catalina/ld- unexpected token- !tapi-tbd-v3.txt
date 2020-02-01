@@ -1,0 +1,11 @@
+dantopa:demos/test-cmplx % gfortran test_cmplx.f08                                                                                                                                        (master)fortran-alpha
+ld: unexpected token: !tapi-tbd-v3 file '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd' for architecture x86_64
+collect2: error: ld returned 1 exit status
+
+https://trac.macports.org/ticket/58351
+https://trac.macports.org/ticket/58333#comment:8
+
+Normally the linker issue can be fixed by something like this:
+
+sudo port -v uninstall ld64
+sudo port -v install ld64 +ld64_xcode
