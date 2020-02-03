@@ -1,0 +1,45 @@
+==> Installing julia
+==> Searching for binary cache of julia
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2.spec.yaml failed.
+==> No binary for julia found: installing from source
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/julia/julia-1.1.1.tar.gz
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/julia/julia-1.1.1.tar.gz
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/julia/julia-1.1.1.tar.gz
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/julia/julia-1.1.1.tar.gz failed.
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/_source-cache/archive/3c/3c5395dd3419ebb82d57bcc49dc729df3b225b9094e74376f8c649ee35ed79c2.tar.gz
+######################################################################################################################################################################################################### 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/julia-1.1.1-full.tar.gz
+==> Created stage in /tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2
+==> No patches needed for julia
+==> Building julia [Package]
+==> Executing phase: 'install'
+==> Error: ProcessError: Command exited with status 1:
+    '/home/dantopa/scratch/spacktivity/ubuntu-spack-2020-02-01-00-38/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/bin/julia' '-e' 'import Pkg;Pkg.add("MPI"); using MPI'
+
+2 errors found in build log:
+  >> 4     find: '/tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/spack-src/usr/share/julia/stdlib/v1.1/*/src': No such file or directory
+     5     /tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/spack-src/contrib/install.sh 755 /tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/spack
+           -src/contrib/julia-config.jl /tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/spack-src/usr/share/julia/
+     6     Creating usr/etc/julia/startup.jl
+     7     Copying in usr/share/man/man1/julia.1
+     8     Warning: git information unavailable; versioning information limited
+     9     Warning: git information unavailable; versioning information limited
+  >> 10    rm: cannot remove 'scratch/dsfmt-2.2.3/': No such file or directory
+     11    patching file dSFMT.h
+     12    Hunk #2 succeeded at 181 (offset 2 lines).
+     13    Hunk #3 succeeded at 202 (offset 2 lines).
+     14    Hunk #4 succeeded at 220 (offset 2 lines).
+     15    Hunk #5 succeeded at 244 (offset 2 lines).
+     16    Hunk #6 succeeded at 265 (offset 2 lines).
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/spack-build-out.txt
+
+
+Step 12: spack install chapel  % gcc@9.2.1 arch=linux-ubuntu20.04-haswell

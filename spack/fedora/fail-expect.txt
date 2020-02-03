@@ -1,0 +1,55 @@
+==> Installing expect
+==> Searching for binary cache of expect
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-expect-5.45-gmhkosda7cvdl7pb5sfbiiasjkbmisj2.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-expect-5.45-gmhkosda7cvdl7pb5sfbiiasjkbmisj2.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-expect-5.45-gmhkosda7cvdl7pb5sfbiiasjkbmisj2.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-expect-5.45-gmhkosda7cvdl7pb5sfbiiasjkbmisj2.spec.yaml failed.
+==> No binary for expect found: installing from source
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/expect/expect-5.45.tar.gz
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/expect/expect-5.45.tar.gz
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/expect/expect-5.45.tar.gz
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/expect/expect-5.45.tar.gz failed.
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/_source-cache/archive/b2/b28dca90428a3b30e650525cdc16255d76bb6ccd65d448be53e620d95d5cc040.tar.gz
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/_source-cache/archive/b2/b28dca90428a3b30e650525cdc16255d76bb6ccd65d448be53e620d95d5cc040.tar.gz
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/_source-cache/archive/b2/b28dca90428a3b30e650525cdc16255d76bb6ccd65d448be53e620d95d5cc040.tar.gz
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/_source-cache/archive/b2/b28dca90428a3b30e650525cdc16255d76bb6ccd65d448be53e620d95d5cc040.tar.gz failed.
+==> Fetching https://sourceforge.net/projects/expect/files/Expect/5.45/expect5.45.tar.gz/download
+######################################################################################################################################################################################################### 100.0%######################################################################################################################################################################################################### 100.0%######################################################################################################################################################################################################### 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-expect-5.45-gmhkosda7cvdl7pb5sfbiiasjkbmisj2/download
+==> Created stage in /tmp/root/spack-stage/spack-stage-expect-5.45-gmhkosda7cvdl7pb5sfbiiasjkbmisj2
+==> Applied patch /home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/var/spack/repos/builtin/packages/expect/expect_detect_tcl_private_header_os_x_mountain_lion.patch
+==> Building expect [AutotoolsPackage]
+==> Executing phase: 'autoreconf'
+==> Executing phase: 'configure'
+==> Executing phase: 'build'
+==> Executing phase: 'install'
+==> Error: ProcessError: install_name_tool: No such file or directory: 'install_name_tool'
+    Command: 'install_name_tool' '-change' 'libexpect5.45.dylib' '/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-haswell/gcc-9.2.1/expect-5.45-gmhkosda7cvdl7pb5sfbiiasjkbmisj2/lib/expect5.45/libexpect5.45.so' '/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-haswell/gcc-9.2.1/expect-5.45-gmhkosda7cvdl7pb5sfbiiasjkbmisj2/bin/expect'
+
+1 error found in build log:
+     197    checking for long file names... yes
+     198    checking for tclsh... /home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-haswell/gcc-9.2.1/tcl-8.6.8-5yonxnic2ihubpgw2jnuqnpea4gteazq/bin/tclsh8.6
+     199    configure: creating ./config.status
+     200    config.status: creating Makefile
+     201    config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+     202    config.status: executing default commands
+  >> 203    chmod: cannot access './install-sh': No such file or directory
+     204    === configuring in testsuite (/tmp/root/spack-stage/spack-stage-expect-5.45-gmhkosda7cvdl7pb5sfbiiasjkbmisj2/spack-src/testsuite)
+     205    configure: running /bin/sh ./configure --disable-option-checking '--prefix=/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-haswell/gcc-9.2.1/expect-5.45-g
+            mhkosda7cvdl7pb5sfbiiasjkbmisj2'  '--exec-prefix=/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-haswell/gcc-9.2.1/expect-5.45-gmhkosda7cvdl7pb5sfbiiasjkb
+            misj2' '--enable-threads' '--enable-shared' '--enable-64bit' '--with-tcl=/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-haswell/gcc-9.2.1/tcl-8.6.8-5yonx
+            nic2ihubpgw2jnuqnpea4gteazq/lib' '--with-tclinclude=/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-haswell/gcc-9.2.1/tcl-8.6.8-5yonxnic2ihubpgw2jnuqnpea4
+            gteazq/include' 'CC=/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/lib/spack/env/gcc/gcc' --cache-file=/dev/null --srcdir=.
+     206    checking for correct TEA configuration... ok (TEA 3.9)
+     207    configure: configuring exp_test 0.43
+     208    checking for Tcl configuration... found /home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-haswell/gcc-9.2.1/tcl-8.6.8-5yonxnic2ihubpgw2jnuqnpea4gteazq/lib/t
+            clConfig.sh
+     209    checking for existence of /home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-haswell/gcc-9.2.1/tcl-8.6.8-5yonxnic2ihubpgw2jnuqnpea4gteazq/lib/tclConfig.sh...
+             loading
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-expect-5.45-gmhkosda7cvdl7pb5sfbiiasjkbmisj2/spack-build-out.txt

@@ -1,0 +1,93 @@
+==> Installing pkgconf
+==> Searching for binary cache of pkgconf
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-pkgconf-1.6.3-42k2ojsvkmnxq3mgdtozoglmmdu4cxjz.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-pkgconf-1.6.3-42k2ojsvkmnxq3mgdtozoglmmdu4cxjz.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-pkgconf-1.6.3-42k2ojsvkmnxq3mgdtozoglmmdu4cxjz.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-pkgconf-1.6.3-42k2ojsvkmnxq3mgdtozoglmmdu4cxjz.spec.yaml failed.
+==> No binary for pkgconf found: installing from source
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/pkgconf/pkgconf-1.6.3.tar.xz
+######################################################################################################################################################################################################### 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-pkgconf-1.6.3-42k2ojsvkmnxq3mgdtozoglmmdu4cxjz/pkgconf-1.6.3.tar.xz
+tar (child): xz: Cannot exec: No such file or directory
+tar (child): Error is not recoverable: exiting now
+/usr/bin/tar: Child returned status 2
+/usr/bin/tar: Error is not recoverable: exiting now
+==> Error: ProcessError: Command exited with status 2:
+    '/usr/bin/tar' '-xf' '/tmp/root/spack-stage/spack-stage-pkgconf-1.6.3-42k2ojsvkmnxq3mgdtozoglmmdu4cxjz/pkgconf-1.6.3.tar.xz'
+[root@980b74796413 fedora-spack-2020-02-02-03-25]# spack install pkg-config
+==> Installing pkg-config
+==> Searching for binary cache of pkg-config
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod.spec.yaml failed.
+==> No binary for pkg-config found: installing from source
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/pkg-config/pkg-config-0.29.2.tar.gz
+######################################################################################################################################################################################################### 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod/pkg-config-0.29.2.tar.gz
+==> Created stage in /tmp/root/spack-stage/spack-stage-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod
+==> No patches needed for pkg-config
+==> Building pkg-config [AutotoolsPackage]
+==> Executing phase: 'autoreconf'
+==> Executing phase: 'configure'
+==> Executing phase: 'build'
+==> Error: ProcessError: Command exited with status 2:
+    'make'
+
+6 errors found in build log:
+     44     checking for strip... strip
+     45     checking for ranlib... ranlib
+     46     checking command to parse /usr/bin/nm -B output from /home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/lib/spack/env/gcc/gcc object... ok
+     47     checking for sysroot... no
+     48     checking for a working dd... /usr/bin/dd
+     49     checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+  >> 50     /tmp/root/spack-stage/spack-stage-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod/spack-src/configure: line 6445: /usr/bin/file: No such file or directory
+     51     checking for mt... no
+     52     checking if : is a manifest tool... no
+     53     checking how to run the C preprocessor... /home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/lib/spack/env/gcc/gcc -E
+     54     checking for ANSI C header files... yes
+     55     checking for sys/types.h... yes
+     56     checking for sys/stat.h... yes
+
+     ...
+
+     208    checking for strip... strip
+     209    checking for ranlib... ranlib
+     210    checking command to parse /usr/bin/nm -B output from /home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/lib/spack/env/gcc/gcc object... ok
+     211    checking for sysroot... no
+     212    checking for a working dd... /usr/bin/dd
+     213    checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+  >> 214    ./configure: line 9764: /usr/bin/file: No such file or directory
+     215    checking for mt... no
+     216    checking if : is a manifest tool... no
+     217    checking for dlfcn.h... yes
+     218    checking for objdir... .libs
+     219    checking if /home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/lib/spack/env/gcc/gcc supports -fno-rtti -fno-exceptions... no
+     220    checking for /home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/lib/spack/env/gcc/gcc option to produce PIC... -fPIC -DPIC
+
+     ...
+
+     701      CC       pkg.o
+     702      CC       parse.o
+     703      CC       rpmvercmp.o
+     704      CC       main.o
+     705      CCLD     pkg-config
+     706    /usr/bin/ld: ./glib/glib/.libs/libglib-2.0.a(libglib_2_0_la-gcharset.o): in function `get_alias_hash':
+  >> 707    /tmp/root/spack-stage/spack-stage-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod/spack-src/glib/glib/gcharset.c:54: undefined reference to `_g_locale_get_charset_aliases'
+     708    /usr/bin/ld: ./glib/glib/.libs/libglib-2.0.a(libglib_2_0_la-gcharset.o): in function `g_get_charset':
+  >> 709    /tmp/root/spack-stage/spack-stage-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod/spack-src/glib/glib/gcharset.c:193: undefined reference to `_g_locale_charset_raw'
+     710    /usr/bin/ld: ./glib/glib/.libs/libglib-2.0.a(libglib_2_0_la-gcharset.o): in function `g_utf8_get_charset_internal':
+  >> 711    /tmp/root/spack-stage/spack-stage-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod/spack-src/glib/glib/gcharset.c:119: undefined reference to `_g_locale_charset_unalias'
+  >> 712    collect2: error: ld returned 1 exit status
+     713    make[2]: *** [Makefile:572: pkg-config] Error 1
+     714    make[2]: Leaving directory '/tmp/root/spack-stage/spack-stage-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod/spack-src'
+     715    make[1]: *** [Makefile:707: all-recursive] Error 1
+     716    make[1]: Leaving directory '/tmp/root/spack-stage/spack-stage-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod/spack-src'
+     717    make: *** [Makefile:463: all] Error 2
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-pkg-config-0.29.2-j5r5p2z6mjfhfpz7jog6m27xzoi6bkod/spack-build-out.txt

@@ -1,0 +1,19 @@
+==> Installing pkgconf
+==> Searching for binary cache of pkgconf
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-core2-gcc-4.4.7-pkgconf-1.6.3-wrblnyo7juxctpe5mffcirszza4rs3k6.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-core2-gcc-4.4.7-pkgconf-1.6.3-wrblnyo7juxctpe5mffcirszza4rs3k6.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-core2-gcc-4.4.7-pkgconf-1.6.3-wrblnyo7juxctpe5mffcirszza4rs3k6.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-core2-gcc-4.4.7-pkgconf-1.6.3-wrblnyo7juxctpe5mffcirszza4rs3k6.spec.yaml failed.
+==> No binary for pkgconf found: installing from source
+==> Using cached archive: /home/dantopa/spacktivity/Scientific-Linux-6/var/spack/cache/_source-cache/archive/61/61f0b31b0d5ea0e862b454a80c170f57bad47879c0c42bd8de89200ff62ea210.tar.xz
+==> Staging archive: /tmp/root/spack-stage/spack-stage-pkgconf-1.6.3-wrblnyo7juxctpe5mffcirszza4rs3k6/pkgconf-1.6.3.tar.xz
+tar (child): xz: Cannot exec: No such file or directory
+tar (child): Error is not recoverable: exiting now
+/bin/tar: Child returned status 2
+/bin/tar: Error is not recoverable: exiting now
+==> Error: ProcessError: Command exited with status 2:
+    '/bin/tar' '-xf' '/tmp/root/spack-stage/spack-stage-pkgconf-1.6.3-wrblnyo7juxctpe5mffcirszza4rs3k6/pkgconf-1.6.3.tar.xz'
+[root@fe14f789b7e1 defaults]# spack install pkg-config
+==> Warning: gcc@4.4.7 cannot build optimized binaries for "haswell". Using best target possible: "core2"

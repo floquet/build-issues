@@ -1,0 +1,17 @@
+==> Installing tau
+==> Building tau [Package]
+==> Executing phase: 'install'
+==> Error: ProcessError: Command exited with status 2:
+    'make' '-j12' 'install'
+
+8 errors found in build log:
+     63     TAU: PDT: Using binary rewriting capabilities from PEBIL in tau_pebil_rewrite
+     64     ====================================================
+     65      Copy /tmp/root/spack-stage/spack-stage-tau-2.28.2-nzpfpsrst75vuybug6cpptwipf2ba2aq/spack-src/tools/src/contrib/CubeReader.jar to /home/dantopa/scratch/spacktivity/ubuntu-spack-2020-02-01-00-38/o
+            pt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/tau-2.28.2-nzpfpsrst75vuybug6cpptwipf2ba2aq/x86_64/lib
+     66     ====================================================
+     67     ... done
+     68     ***********************************************************************
+  >> 69     grep: ./utils/FixMakefile.info: No such file or directory
+  >> 70     grep: ./utils/FixMakefile.sed: No such file or directory
+ 

@@ -1,0 +1,59 @@
+root@69fe1c665e73:ubuntu-spack-2020-02-01-00-38 $ spack install gdl % gcc @ 9.2.0
+==> Error: An unsatisfiable variant constraint has been detected for spec:
+
+    gettext@0.20.1%gcc@9.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu20.04-haswell
+
+
+while trying to concretize the partial spec:
+
+    python@3.7.6%gcc@9.2.0+bz2+ctypes+dbm~debug~libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-ubuntu20.04-haswell
+        ^pkgconf@1.6.3%gcc@9.2.0 arch=linux-ubuntu20.04-haswell
+
+
+python requires gettext variant ~libxml2, but spec asked for +libxml2
+root@69fe1c665e73:ubuntu-spack-2020-02-01-00-38 $ spack install paraview
+==> Error: An unsatisfiable variant constraint has been detected for spec:
+
+    gettext@0.20.1%gcc@9.2.1+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu20.04-haswell
+        ^bzip2@1.0.8%gcc@9.2.1+shared arch=linux-ubuntu20.04-haswell
+            ^diffutils@3.7%gcc@9.2.1 arch=linux-ubuntu20.04-haswell
+                ^libiconv@1.16%gcc@9.2.1 arch=linux-ubuntu20.04-haswell
+        ^libxml2@2.9.9%gcc@9.2.1~python arch=linux-ubuntu20.04-haswell
+            ^pkgconf@1.6.3%gcc@9.2.1 arch=linux-ubuntu20.04-haswell
+            ^xz@5.2.4%gcc@9.2.1 arch=linux-ubuntu20.04-haswell
+            ^zlib@1.2.11%gcc@9.2.1+optimize+pic+shared arch=linux-ubuntu20.04-haswell
+        ^ncurses@6.1%gcc@9.2.1~symlinks~termlib arch=linux-ubuntu20.04-haswell
+        ^tar
+
+
+while trying to concretize the partial spec:
+
+    python@3.7.6%gcc@9.2.1+bz2+ctypes+dbm~debug~libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-ubuntu20.04-haswell
+        ^pkgconf@1.6.3%gcc@9.2.1 arch=linux-ubuntu20.04-haswell
+
+
+python requires gettext variant ~libxml2, but spec asked for +libxml2
+root@69fe1c665e73:ubuntu-spack-2020-02-01-00-38 $ spack install paraview % gcc @ 9.2.1
+==> Error: An unsatisfiable variant constraint has been detected for spec:
+
+    gettext@0.20.1%gcc@9.2.1+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu20.04-haswell
+        ^bzip2@1.0.8%gcc@9.2.1+shared arch=linux-ubuntu20.04-haswell
+            ^diffutils@3.7%gcc@9.2.1 arch=linux-ubuntu20.04-haswell
+                ^libiconv@1.16%gcc@9.2.1 arch=linux-ubuntu20.04-haswell
+        ^libxml2@2.9.9%gcc@9.2.1~python arch=linux-ubuntu20.04-haswell
+            ^pkgconf@1.6.3%gcc@9.2.1 arch=linux-ubuntu20.04-haswell
+            ^xz@5.2.4%gcc@9.2.1 arch=linux-ubuntu20.04-haswell
+            ^zlib@1.2.11%gcc@9.2.1+optimize+pic+shared arch=linux-ubuntu20.04-haswell
+        ^ncurses@6.1%gcc@9.2.1~symlinks~termlib arch=linux-ubuntu20.04-haswell
+        ^tar
+
+
+while trying to concretize the partial spec:
+
+    python@3.7.6%gcc@9.2.1+bz2+ctypes+dbm~debug~libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-ubuntu20.04-haswell
+        ^pkgconf@1.6.3%gcc@9.2.1 arch=linux-ubuntu20.04-haswell
+
+
+python requires gettext variant ~libxml2, but spec asked for +libxml2
+
+root@69fe1c665e73:ubuntu-spack-2020-02-01-00-38 $ spack install python~libxml2 @ 3.8.1 % gcc @ 9.2.1

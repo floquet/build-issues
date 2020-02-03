@@ -9,3 +9,10 @@ Normally the linker issue can be fixed by something like this:
 
 sudo port -v uninstall ld64
 sudo port -v install ld64 +ld64_xcode
+
+dantopa:github/build-issues % /usr/bin/ld -v                                                                                                                                               (master)build-issues
+@(#)PROGRAM:ld  PROJECT:ld64-530
+BUILD 18:57:17 Dec 13 2019
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+LTO support using: LLVM version 11.0.0, (clang-1100.0.33.17) (static support for 23, runtime is 23)
+TAPI support using: Apple TAPI version 11.0.0 (tapi-1100.0.11)

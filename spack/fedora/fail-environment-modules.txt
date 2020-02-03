@@ -1,0 +1,46 @@
+==> Installing environment-modules
+==> Searching for binary cache of environment-modules
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-x86_64-gcc-9.2.1-environment-modules-4.4.1-exhv6ays4ztfk4z6sm6fdbnkbm73kxp3.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-x86_64-gcc-9.2.1-environment-modules-4.4.1-exhv6ays4ztfk4z6sm6fdbnkbm73kxp3.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-x86_64-gcc-9.2.1-environment-modules-4.4.1-exhv6ays4ztfk4z6sm6fdbnkbm73kxp3.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-x86_64-gcc-9.2.1-environment-modules-4.4.1-exhv6ays4ztfk4z6sm6fdbnkbm73kxp3.spec.yaml failed.
+==> No binary for environment-modules found: installing from source
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/environment-modules/environment-modules-4.4.1.tar.gz
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/environment-modules/environment-modules-4.4.1.tar.gz
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/environment-modules/environment-modules-4.4.1.tar.gz
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/environment-modules/environment-modules-4.4.1.tar.gz failed.
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/_source-cache/archive/3c/3c20cfb2ff8a4d74ac6d566e7b5fa9dd220d96d17e6d8a4ae29b1ec0107ee407.tar.gz
+######################################################################################################################################################################################################### 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-environment-modules-4.4.1-exhv6ays4ztfk4z6sm6fdbnkbm73kxp3/modules-4.4.1.tar.gz
+==> Created stage in /tmp/root/spack-stage/spack-stage-environment-modules-4.4.1-exhv6ays4ztfk4z6sm6fdbnkbm73kxp3
+==> No patches needed for environment-modules
+==> Building environment-modules [Package]
+==> Executing phase: 'install'
+==> Error: ProcessError: Command exited with status 1:
+    './configure' '--without-x' '--prefix=/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/environment-modules-4.4.1-exhv6ays4ztfk4z6sm6fdbnkbm73kxp3' '--without-tclx' '--with-tclx-ver=0.0' '--with-tcl=/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/tcl-8.6.8-sil4xfuqipoksydegefnmxoxkjmp23tn/lib' '--with-tcl-ver=8.6' '--disable-dependency-tracking' '--disable-silent-rules' '--disable-versioning' '--datarootdir=/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/environment-modules-4.4.1-exhv6ays4ztfk4z6sm6fdbnkbm73kxp3/share' '--with-icase=search' '--enable-extended-default' '--enable-advanced-version-spec' '--enable-color' '--enable-auto-handling' '--with-quarantine-vars=LD_LIBRARY_PATH' '--disable-compat-version' '--with-tclsh=/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/tcl-8.6.8-sil4xfuqipoksydegefnmxoxkjmp23tn/bin/tclsh'
+
+2 warnings found in build log:
+     1    ==> Executing phase: 'install'
+     2    ==> [2020-02-02-03:32:14.020547] './configure' '--without-x' '--prefix=/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/environment-modules-
+          4.4.1-exhv6ays4ztfk4z6sm6fdbnkbm73kxp3' '--without-tclx' '--with-tclx-ver=0.0' '--with-tcl=/home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/
+          tcl-8.6.8-sil4xfuqipoksydegefnmxoxkjmp23tn/lib' '--with-tcl-ver=8.6' '--disable-dependency-tracking' '--disable-silent-rules' '--disable-versioning' '--datarootdir=/home/dantopa/scratch/spacktivity
+          /fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/environment-modules-4.4.1-exhv6ays4ztfk4z6sm6fdbnkbm73kxp3/share' '--with-icase=search' '--enable-extended-default' '--enabl
+          e-advanced-version-spec' '--enable-color' '--enable-auto-handling' '--with-quarantine-vars=LD_LIBRARY_PATH' '--disable-compat-version' '--with-tclsh=/home/dantopa/scratch/spacktivity/fedora-spack-2
+          020-02-02-03-25/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/tcl-8.6.8-sil4xfuqipoksydegefnmxoxkjmp23tn/bin/tclsh'
+     3    checking for uname... /usr/bin/uname
+     4    checking for make... /usr/bin/make
+     5    checking for sed... /usr/bin/sed
+     6    checking for runtest... not found
+  >> 7    WARNING: Install `dejagnu' if you want to run the testsuite
+     8    checking for manpath... not found
+  >> 9    WARNING: Will rely on MANPATH to get enabled man directories
+     10   checking for /home/dantopa/scratch/spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/tcl-8.6.8-sil4xfuqipoksydegefnmxoxkjmp23tn/bin/tclsh... /home/dantopa/scratch/
+          spacktivity/fedora-spack-2020-02-02-03-25/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/tcl-8.6.8-sil4xfuqipoksydegefnmxoxkjmp23tn/bin/tclsh
+     11   checking for ps... not found
+     12   ERROR: ps could not be found
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-environment-modules-4.4.1-exhv6ays4ztfk4z6sm6fdbnkbm73kxp3/spack-build-out.txt
