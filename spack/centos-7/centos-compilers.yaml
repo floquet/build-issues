@@ -1,0 +1,93 @@
+compilers:
+- compiler:
+    spec: gcc@4.8.5
+    paths:
+      cc: /bin/gcc
+      cxx: /bin/g++
+      f77: /bin/gfortran
+      fc: /bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment:
+      unset: []
+    extra_rpaths: []
+- compiler:
+    spec: gcc@9.2.0
+    paths:
+      cc: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.2.0-k4debouieljbsurbrr2w755davwl6xsu/bin/gcc
+      cxx: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.2.0-k4debouieljbsurbrr2w755davwl6xsu/bin/g++
+      f77: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.2.0-k4debouieljbsurbrr2w755davwl6xsu/bin/gfortran
+      fc: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.2.0-k4debouieljbsurbrr2w755davwl6xsu/bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@8.3.0
+    paths:
+      cc: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-8.3.0-eodqjge7swubyde4rv4llfg42eex7fx2/bin/gcc
+      cxx: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-8.3.0-eodqjge7swubyde4rv4llfg42eex7fx2/bin/g++
+      f77: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-8.3.0-eodqjge7swubyde4rv4llfg42eex7fx2/bin/gfortran
+      fc: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-8.3.0-eodqjge7swubyde4rv4llfg42eex7fx2/bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@7.4.0
+    paths:
+      cc: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-7.4.0-nfzmjssij66eff6mpvigmu7h6zwatwit/bin/gcc
+      cxx: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-7.4.0-nfzmjssij66eff6mpvigmu7h6zwatwit/bin/g++
+      f77: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-7.4.0-nfzmjssij66eff6mpvigmu7h6zwatwit/bin/gfortran
+      fc: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-7.4.0-nfzmjssij66eff6mpvigmu7h6zwatwit/bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@6.5.0
+    paths:
+      cc: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-6.5.0-jb5lj5nehog5qrwzezfymz3mho7jxy23/bin/gcc
+      cxx: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-6.5.0-jb5lj5nehog5qrwzezfymz3mho7jxy23/bin/g++
+      f77: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-6.5.0-jb5lj5nehog5qrwzezfymz3mho7jxy23/bin/gfortran
+      fc: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-6.5.0-jb5lj5nehog5qrwzezfymz3mho7jxy23/bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@5.5.0
+    paths:
+      cc: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-5.5.0-slibymfitrvgc4xknll2y3z5izb3do6o/bin/gcc
+      cxx: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-5.5.0-slibymfitrvgc4xknll2y3z5izb3do6o/bin/g++
+      f77: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-5.5.0-slibymfitrvgc4xknll2y3z5izb3do6o/bin/gfortran
+      fc: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-5.5.0-slibymfitrvgc4xknll2y3z5izb3do6o/bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@4.9.4
+    paths:
+      cc: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-4.9.4-ts642do7ybxv4rjcmhvvwxmge5njuomy/bin/gcc
+      cxx: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-4.9.4-ts642do7ybxv4rjcmhvvwxmge5njuomy/bin/g++
+      f77: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-4.9.4-ts642do7ybxv4rjcmhvvwxmge5njuomy/bin/gfortran
+      fc: /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-4.9.4-ts642do7ybxv4rjcmhvvwxmge5njuomy/bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []

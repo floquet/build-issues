@@ -1,0 +1,19 @@
+==> Installing gcc
+==> Searching for binary cache of gcc
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-gcc-9.2.0-7fnucunqvrlop4j7smdosppww6e6opi6.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-gcc-9.2.0-7fnucunqvrlop4j7smdosppww6e6opi6.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-gcc-9.2.0-7fnucunqvrlop4j7smdosppww6e6opi6.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-gcc-9.2.0-7fnucunqvrlop4j7smdosppww6e6opi6.spec.yaml failed.
+==> No binary for gcc found: installing from source
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/gcc/gcc-9.2.0.tar.xz
+############################################################################################################################# 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-gcc-9.2.0-7fnucunqvrlop4j7smdosppww6e6opi6/gcc-9.2.0.tar.xz
+tar (child): xz: Cannot exec: No such file or directory
+tar (child): Error is not recoverable: exiting now
+/usr/bin/tar: Child returned status 2
+/usr/bin/tar: Error is not recoverable: exiting now
+==> Error: ProcessError: Command exited with status 2:
+    '/usr/bin/tar' '-xf' '/tmp/root/spack-stage/spack-stage-gcc-9.2.0-7fnucunqvrlop4j7smdosppww6e6opi6/gcc-9.2.0.tar.xz'
+==> Error: Spec 'gcc@9.2.0' matches no installed packages.
