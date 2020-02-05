@@ -1,0 +1,11 @@
+Step 6: apt-get install python -y
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Package python is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+However the following packages replace it:
+  python2-minimal python2 2to3
+
+E: Package 'python' has no installation candidate

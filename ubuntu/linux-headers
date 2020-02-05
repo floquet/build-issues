@@ -1,0 +1,7 @@
+Step 2: apt-get install linux-headers-4.19.76-linuxkit -y
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+E: Unable to locate package linux-headers-4.19.76-linuxkit
+E: Couldn't find any package by glob 'linux-headers-4.19.76-linuxkit'
+E: Couldn't find any package by regex 'linux-headers-4.19.76-linuxkit'

@@ -1,0 +1,18 @@
+==> Installing diffutils
+==> Searching for binary cache of diffutils
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-diffutils-3.7-gm4xssj7cbvxpsmo6yk5ypbseey64obd.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-diffutils-3.7-gm4xssj7cbvxpsmo6yk5ypbseey64obd.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-diffutils-3.7-gm4xssj7cbvxpsmo6yk5ypbseey64obd.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-diffutils-3.7-gm4xssj7cbvxpsmo6yk5ypbseey64obd.spec.yaml failed.
+==> No binary for diffutils found: installing from source
+==> Using cached archive: /home/dantopa/spacktivity/Scientific-Linux-6/var/spack/cache/_source-cache/archive/b3/b3a7a6221c3dc916085f0d205abf6b8e1ba443d4dd965118da364a1dc1cb3a26.tar.xz
+==> Staging archive: /tmp/root/spack-stage/spack-stage-diffutils-3.7-gm4xssj7cbvxpsmo6yk5ypbseey64obd/diffutils-3.7.tar.xz
+tar (child): xz: Cannot exec: No such file or directory
+tar (child): Error is not recoverable: exiting now
+/bin/tar: Child returned status 2
+/bin/tar: Error is not recoverable: exiting now
+==> Error: ProcessError: Command exited with status 2:
+    '/bin/tar' '-xf' '/tmp/root/spack-stage/spack-stage-diffutils-3.7-gm4xssj7cbvxpsmo6yk5ypbseey64obd/diffutils-3.7.tar.xz'
+==> Error: Spec 'llvm@8.0.0' matches no installed packages.
