@@ -1,0 +1,17 @@
+==> Installing julia
+==> Searching for binary cache of julia
+==> No binary for julia found: installing from source
+==> Fetching https://github.com/JuliaLang/julia/releases/download/v1.1.1/julia-1.1.1-full.tar.gz
+################################################################################################################################################################################## 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-julia-1.1.1-ufvlh4ghmuebioebosh2awnotrqrqdwu/julia-1.1.1-full.tar.gz
+==> Created stage in /tmp/root/spack-stage/spack-stage-julia-1.1.1-ufvlh4ghmuebioebosh2awnotrqrqdwu
+==> No patches needed for julia
+==> Building julia [Package]
+==> Executing phase: 'install'
+==> Error: Exception occurred in writer daemon!
+Traceback (most recent call last):
+  File "/home/dantopa/spacktivity/CERN-Centos-7/lib/spack/llnl/util/tty/log.py", line 447, in _writer_daemon
+    line = in_pipe.readline()
+  File "/usr/lib64/python3.6/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 6: ordinal not in range(128)

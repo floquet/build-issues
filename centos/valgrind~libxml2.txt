@@ -1,0 +1,30 @@
+==> Installing valgrind
+==> Searching for binary cache of valgrind
+==> No binary for valgrind found: installing from source
+==> Fetching https://sourceware.org/pub/valgrind/valgrind-3.15.0.tar.bz2
+######################################################################## 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-valgrind-3.15.0-alapt2hw4y3so2yblbcroh44gh2u5bbo/valgrind-3.15.0.tar.bz2
+==> Created stage in /tmp/root/spack-stage/spack-stage-valgrind-3.15.0-alapt2hw4y3so2yblbcroh44gh2u5bbo
+==> Ran patch() for valgrind
+==> Building valgrind [AutotoolsPackage]
+==> Executing phase: 'autoreconf'
+==> Executing phase: 'configure'
+==> Executing phase: 'build'
+==> Executing phase: 'install'
+==> Successfully installed valgrind
+  Fetch: 6.14s.  Build: 3m 43.73s.  Total: 3m 49.87s.
+[+] /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-9.2.0/valgrind-3.15.0-alapt2hw4y3so2yblbcroh44gh2u5bbo
+
+Step 27: spack install visit % gcc@9.2.0 arch=linux-centos7-haswell
+==> Error: An unsatisfiable variant constraint has been detected for spec:
+
+    gettext@0.20.1%gcc@9.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-centos7-haswell
+
+
+while trying to concretize the partial spec:
+
+    python@2.7.16%gcc@9.2.0+bz2+ctypes+dbm~debug~libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-centos7-haswell
+        ^pkg-config@0.29.2%gcc@9.2.0+internal_glib arch=linux-centos7-haswell
+
+
+python requires gettext variant ~libxml2, but spec asked for +libxml2

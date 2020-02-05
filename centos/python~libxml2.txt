@@ -1,0 +1,39 @@
+==> Installing python
+==> Searching for binary cache of python
+==> No binary for python found: installing from source
+==> Fetching https://www.python.org/ftp/python/3.8.1/Python-3.8.1.tgz
+######################################################################## 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-python-3.8.1-qwmpq2tuiunzx44q3o7beqj4gpdf5ypa/Python-3.8.1.tgz
+==> Created stage in /tmp/root/spack-stage/spack-stage-python-3.8.1-qwmpq2tuiunzx44q3o7beqj4gpdf5ypa
+==> Ran patch() for python
+==> Building python [AutotoolsPackage]
+==> Executing phase: 'autoreconf'
+==> Executing phase: 'configure'
+==> Executing phase: 'build'
+==> Executing phase: 'install'
+==> Successfully installed python
+  Fetch: 3.40s.  Build: 4m 26.85s.  Total: 4m 30.24s.
+[+] /home/dantopa/spacktivity/CERN-Centos-7/opt/spack/linux-centos7-haswell/gcc-9.2.0/python-3.8.1-qwmpq2tuiunzx44q3o7beqj4gpdf5ypa
+
+Step 24: spack install paraview % gcc@9.2.0 arch=linux-centos7-haswell
+==> Error: An unsatisfiable variant constraint has been detected for spec:
+
+    gettext@0.20.1%gcc@9.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-centos7-haswell
+        ^bzip2@1.0.8%gcc@9.2.0+shared arch=linux-centos7-haswell
+            ^diffutils@3.7%gcc@9.2.0 arch=linux-centos7-haswell
+                ^libiconv@1.16%gcc@9.2.0 arch=linux-centos7-haswell
+        ^libxml2@2.9.9%gcc@9.2.0~python arch=linux-centos7-haswell
+            ^pkg-config@0.29.2%gcc@9.2.0+internal_glib arch=linux-centos7-haswell
+            ^xz@5.2.4%gcc@9.2.0 arch=linux-centos7-haswell
+            ^zlib@1.2.11%gcc@9.2.0+optimize+pic+shared arch=linux-centos7-haswell
+        ^ncurses@6.1%gcc@9.2.0~symlinks~termlib arch=linux-centos7-haswell
+        ^tar
+
+
+while trying to concretize the partial spec:
+
+    python@3.7.6%gcc@9.2.0+bz2+ctypes+dbm~debug~libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-centos7-haswell
+        ^pkg-config@0.29.2%gcc@9.2.0+internal_glib arch=linux-centos7-haswell
+
+
+python requires gettext variant ~libxml2, but spec asked for +libxml2
