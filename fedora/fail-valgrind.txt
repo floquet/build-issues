@@ -1,0 +1,49 @@
+==> Installing valgrind
+==> Searching for binary cache of valgrind
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-x86_64-gcc-9.2.1-valgrind-3.15.0-pszao3q7qnvicofcyilmligdvuoolhf6.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-x86_64-gcc-9.2.1-valgrind-3.15.0-pszao3q7qnvicofcyilmligdvuoolhf6.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-x86_64-gcc-9.2.1-valgrind-3.15.0-pszao3q7qnvicofcyilmligdvuoolhf6.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-x86_64-gcc-9.2.1-valgrind-3.15.0-pszao3q7qnvicofcyilmligdvuoolhf6.spec.yaml failed.
+==> No binary for valgrind found: installing from source
+==> Using cached archive: /home/dantopa/scratch/spacktivity/fedora-spack/var/spack/cache/_source-cache/archive/41/417c7a9da8f60dd05698b3a7bc6002e4ef996f14c13f0ff96679a16873e78ab1.tar.bz2
+==> Staging archive: /tmp/root/spack-stage/spack-stage-valgrind-3.15.0-pszao3q7qnvicofcyilmligdvuoolhf6/valgrind-3.15.0.tar.bz2
+==> Created stage in /tmp/root/spack-stage/spack-stage-valgrind-3.15.0-pszao3q7qnvicofcyilmligdvuoolhf6
+==> Ran patch() for valgrind
+==> Building valgrind [AutotoolsPackage]
+==> Executing phase: 'autoreconf'
+==> Executing phase: 'configure'
+==> Executing phase: 'build'
+==> Error: ProcessError: Command exited with status 2:
+    'make' '-j12'
+
+4 errors found in build log:
+     876    mkdir -p ../.in_place; \
+     877    for f in vgpreload_core-amd64-linux.so  ; do \
+     878      rm -f ../.in_place/$f; \
+     879      ln -f -s ../coregrind/$f ../.in_place; \
+     880    done
+     881    /usr/bin/ar cru libnolto_coregrind-amd64-linux.a libnolto_coregrind_amd64_linux_a-m_libcsetjmp.o
+             libnolto_coregrind_amd64_linux_a-m_main.o
+  >> 882    /usr/bin/ld: cannot find -lubsan
+  >> 883    collect2: error: ld returned 1 exit status
+     884    make[3]: *** [Makefile:2818: valgrind] Error 1
+     885    make[3]: *** Waiting for unfinished jobs....
+     886    ranlib libnolto_coregrind-amd64-linux.a
+  >> 887    /usr/bin/ld: cannot find -lubsan
+  >> 888    collect2: error: ld returned 1 exit status
+     889    make[3]: *** [Makefile:2822: vgdb] Error 1
+     890    mv -f m_ume/.deps/libcoregrind_amd64_linux_a-elf.Tpo m_ume/.deps/libcoregrind_amd64_linux_a-elf.
+            Po
+     891    mv -f m_aspacemgr/.deps/libcoregrind_amd64_linux_a-aspacemgr-linux.Tpo m_aspacemgr/.deps/libcore
+            grind_amd64_linux_a-aspacemgr-linux.Po
+     892    mv -f m_scheduler/.deps/libcoregrind_amd64_linux_a-scheduler.Tpo m_scheduler/.deps/libcoregrind_
+            amd64_linux_a-scheduler.Po
+     893    mv -f m_syswrap/.deps/libcoregrind_amd64_linux_a-syswrap-xen.Tpo m_syswrap/.deps/libcoregrind_am
+            d64_linux_a-syswrap-xen.Po
+     894    mv -f m_demangle/.deps/libcoregrind_amd64_linux_a-cplus-dem.Tpo m_demangle/.deps/libcoregrind_am
+            d64_linux_a-cplus-dem.Po
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-valgrind-3.15.0-pszao3q7qnvicofcyilmligdvuoolhf6/spack-build-out.txt

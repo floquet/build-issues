@@ -1,0 +1,22 @@
+Step 4: spack install paraview  % gcc@9.2.1 arch=x86_64
+==> Error: An unsatisfiable variant constraint has been detected for spec:
+
+    gettext@0.20.1%gcc@9.2.1+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-fedora31-x86_64
+        ^bzip2@1.0.8%gcc@9.2.1+shared arch=linux-fedora31-x86_64
+            ^diffutils@3.7%gcc@9.2.1 arch=linux-fedora31-x86_64
+                ^libiconv@1.16%gcc@9.2.1 arch=linux-fedora31-x86_64
+        ^libxml2@2.9.9%gcc@9.2.1~python arch=linux-fedora31-x86_64
+            ^pkgconf@1.6.3%gcc@9.2.1 arch=linux-fedora31-x86_64
+            ^xz@5.2.4%gcc@9.2.1 arch=linux-fedora31-x86_64
+            ^zlib@1.2.11%gcc@9.2.1+optimize+pic+shared arch=linux-fedora31-x86_64
+        ^ncurses@6.1%gcc@9.2.1~symlinks~termlib arch=linux-fedora31-x86_64
+        ^tar
+
+
+while trying to concretize the partial spec:
+
+    python@3.7.6%gcc@9.2.1+bz2+ctypes+dbm~debug~libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-fedora31-x86_64
+        ^pkgconf@1.6.3%gcc@9.2.1 arch=linux-fedora31-x86_64
+
+
+python requires gettext variant ~libxml2, but spec asked for +libxml2

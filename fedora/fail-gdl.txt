@@ -1,0 +1,54 @@
+[root@ebd17d48c9a8 fedora-spack]# spack install gdl @ gcc@9.2.1
+==> Error: An unsatisfiable variant constraint has been detected for spec:
+
+    gettext@0.20.1%gcc@9.2.1+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-fedora31-haswell
+
+
+while trying to concretize the partial spec:
+
+    python@3.7.6%gcc@9.2.1+bz2+ctypes+dbm~debug~libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-fedora31-haswell
+        ^pkgconf@1.6.3%gcc@9.2.1 arch=linux-fedora31-haswell
+
+
+python requires gettext variant ~libxml2, but spec asked for +libxml2
+
+[root@ebd17d48c9a8 fedora-spack]# spack install python @ 3.8.1 % gcc @ 9.2.1 +libxml2
+
+==> Successfully installed python
+  Fetch: 0.12s.  Build: 1m 22.76s.  Total: 1m 22.88s.
+[+] /home/dantopa/scratch/spacktivity/fedora-spack/opt/spack/linux-fedora31-haswell/gcc-9.2.1/python-3.8.1-3hv7cexg5sdnhegyhas3hsa2lygymkjo
+[root@ebd17d48c9a8 fedora-spack]# spack install gdl % gcc @ 9.2.1
+==> Error: An unsatisfiable variant constraint has been detected for spec:
+
+    gettext@0.20.1%gcc@9.2.1+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-fedora31-haswell
+
+
+while trying to concretize the partial spec:
+
+    python@3.7.6%gcc@9.2.1+bz2+ctypes+dbm~debug~libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-fedora31-haswell
+        ^pkgconf@1.6.3%gcc@9.2.1 arch=linux-fedora31-haswell
+
+[root@ebd17d48c9a8 fedora-spack]# spack install paraview % gcc @ 9.2.1
+==> Error: An unsatisfiable variant constraint has been detected for spec:
+
+    gettext@0.20.1%gcc@9.2.1+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-fedora31-haswell
+        ^bzip2@1.0.8%gcc@9.2.1+shared arch=linux-fedora31-haswell
+            ^diffutils@3.7%gcc@9.2.1 arch=linux-fedora31-haswell
+                ^libiconv@1.16%gcc@9.2.1 arch=linux-fedora31-haswell
+        ^libxml2@2.9.9%gcc@9.2.1~python arch=linux-fedora31-haswell
+            ^pkgconf@1.6.3%gcc@9.2.1 arch=linux-fedora31-haswell
+            ^xz@5.2.4%gcc@9.2.1 arch=linux-fedora31-haswell
+            ^zlib@1.2.11%gcc@9.2.1+optimize+pic+shared arch=linux-fedora31-haswell
+        ^ncurses@6.1%gcc@9.2.1~symlinks~termlib arch=linux-fedora31-haswell
+        ^tar
+
+
+while trying to concretize the partial spec:
+
+    python@3.7.6%gcc@9.2.1+bz2+ctypes+dbm~debug~libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-fedora31-haswell
+        ^pkgconf@1.6.3%gcc@9.2.1 arch=linux-fedora31-haswell
+
+
+python requires gettext variant ~libxml2, but spec asked for +libxml2
+
+[root@ebd17d48c9a8 fedora-spack]# spack install paraview % gcc @ 9.2.1 ^/3hv7cex

@@ -1,0 +1,36 @@
+Step 5: spack install tau  % gcc@9.2.1 arch=x86_64
+==> zlib is already installed in /home/dantopa/scratch/spacktivity/fedora-spack/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/zlib-1.2.11-4zcnhczvb3xvv2vr5ezoh2un5equbddk
+==> binutils is already installed in /home/dantopa/scratch/spacktivity/fedora-spack/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/binutils-2.33.1-zeway26frj55nmul4fkubajauzsergo6
+==> libelf is already installed in /home/dantopa/scratch/spacktivity/fedora-spack/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/libelf-0.8.13-dkauc4zltkx6xo7pk22f6zyxhgdvlawg
+==> libdwarf is already installed in /home/dantopa/scratch/spacktivity/fedora-spack/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/libdwarf-20180129-ugzh42d6tjdzpa2hxzdfasnsc423nsnx
+==> libunwind is already installed in /home/dantopa/scratch/spacktivity/fedora-spack/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/libunwind-1.2.1-m6g5ibvrrodk5ys4ogpticwtwsec42az
+==> Installing otf2
+==> Searching for binary cache of otf2
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-x86_64-gcc-9.2.1-otf2-2.2-bjcaztwnz3wsyrzsnc4hcdabope2jtou.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-x86_64-gcc-9.2.1-otf2-2.2-bjcaztwnz3wsyrzsnc4hcdabope2jtou.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-x86_64-gcc-9.2.1-otf2-2.2-bjcaztwnz3wsyrzsnc4hcdabope2jtou.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-x86_64-gcc-9.2.1-otf2-2.2-bjcaztwnz3wsyrzsnc4hcdabope2jtou.spec.yaml failed.
+==> No binary for otf2 found: installing from source
+==> Using cached archive: /home/dantopa/scratch/spacktivity/fedora-spack/var/spack/cache/_source-cache/archive/d0/d0519af93839dc778eddca2ce1447b1ee23002c41e60beac41ea7fe43117172d.tar.gz
+==> Staging archive: /tmp/root/spack-stage/spack-stage-otf2-2.2-bjcaztwnz3wsyrzsnc4hcdabope2jtou/otf2-2.2.tar.gz
+==> Created stage in /tmp/root/spack-stage/spack-stage-otf2-2.2-bjcaztwnz3wsyrzsnc4hcdabope2jtou
+==> No patches needed for otf2
+==> Building otf2 [AutotoolsPackage]
+==> Executing phase: 'autoreconf'
+==> Executing phase: 'configure'
+==> Error: ProcessError: Command exited with status 1:
+    '/tmp/root/spack-stage/spack-stage-otf2-2.2-bjcaztwnz3wsyrzsnc4hcdabope2jtou/spack-src/configure' '--prefix=/home/dantopa/scratch/spacktivity/fedora-spack/opt/spack/linux-fedora31-x86_64/gcc-9.2.1/otf2-2.2-bjcaztwnz3wsyrzsnc4hcdabope2jtou' '--enable-shared' 'CC=/home/dantopa/scratch/spacktivity/fedora-spack/lib/spack/env/gcc/gcc' 'CXX=/home/dantopa/scratch/spacktivity/fedora-spack/lib/spack/env/gcc/g++' 'F77=/home/dantopa/scratch/spacktivity/fedora-spack/lib/spack/env/gcc/gfortran' 'FC=/home/dantopa/scratch/spacktivity/fedora-spack/lib/spack/env/gcc/gfortran' 'CFLAGS=-fPIC' 'CXXFLAGS=-fPIC'
+
+1 error found in build log:
+     21    checking for a Python interpreter with version >= 2.5... python
+     22    checking for python... /usr/bin/python
+     23    checking for python version... 3.7
+     24    checking for python platform... linux
+     25    checking for python script directory... ${prefix}/lib/python3.7/site-packages
+     26    checking for python extension module directory... ${exec_prefix}/lib64/python3.7/site-packages
+  >> 27    configure: error: OTF2 does require a Python 2 version: 3.7
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-otf2-2.2-bjcaztwnz3wsyrzsnc4hcdabope2jtou/spack-build-out.txt

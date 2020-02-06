@@ -1,0 +1,108 @@
+Step 3: spack install gcc@9.2.0  % gcc@7.3.1 arch=linux-rhel6-haswell
+==> libsigsegv is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libsigsegv-2.12-u4hbkughx47lhxtwpeqopjcxykkqmpk4
+==> m4 is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/m4-1.4.18-f6sy7edoan553rjmpiw2zm7qswyyvnak
+==> pkg-config is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/pkg-config-0.29.2-tt5ctaq7zy4rhzlkmgvctpr6arjnb64q
+==> ncurses is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/ncurses-6.1-bg2fgpnhlpmgrpqfcwnzxvvcekuhska7
+==> readline is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/readline-8.0-i7d4gyakgjvvtu3epmy75udkh5fql4wg
+==> gdbm is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/gdbm-1.18.1-ljdjl4lz2xfkoojxa3mbnri7wongxkbu
+==> perl is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/perl-5.30.1-kevvvige66ok5zfgomxvyamyellofroz
+==> autoconf is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/autoconf-2.69-vmqcss6h7gmp3gzmrdulbvmhzahmjqwv
+==> automake is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/automake-1.16.1-icozmkygrjbrefjc336iajahtanq2owa
+==> libtool is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libtool-2.4.6-rclnrfafjcytzs6uab6er6mxhmd7zopl
+==> gmp is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/gmp-6.1.2-wa5wcd6cnkwsczqwljvleav7xe5d6zbo
+==> isl is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/isl-0.20-jna4zo5mcjrs4hosyekbprprhjek332o
+==> mpfr is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/mpfr-3.1.6-dq3h3g37zcfztlta6jmztesunnkv57uc
+==> mpc is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/mpc-1.1.0-snkoqc66ywbgpabnadnbs3taqycr2tmx
+==> zlib is already installed in /home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/zlib-1.2.11-536svlrers5olrwqwbh3hkjpqpisem6n
+==> Installing gcc
+==> Searching for binary cache of gcc
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-gcc-9.2.0-ik6bxbgldivac7pvz7l5ppcnox54wwev.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-gcc-9.2.0-ik6bxbgldivac7pvz7l5ppcnox54wwev.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-gcc-9.2.0-ik6bxbgldivac7pvz7l5ppcnox54wwev.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-gcc-9.2.0-ik6bxbgldivac7pvz7l5ppcnox54wwev.spec.yaml failed.
+==> No binary for gcc found: installing from source
+==> Using cached archive: /home/dantopa/spacktivity/Scientific-Linux-6/var/spack/cache/_source-cache/archive/ea/ea6ef08f121239da5695f76c9b33637a118dcf63e24164422231917fa61fb206.tar.xz
+==> Staging archive: /tmp/root/spack-stage/spack-stage-gcc-9.2.0-ik6bxbgldivac7pvz7l5ppcnox54wwev/gcc-9.2.0.tar.xz
+==> Created stage in /tmp/root/spack-stage/spack-stage-gcc-9.2.0-ik6bxbgldivac7pvz7l5ppcnox54wwev
+==> Ran patch() for gcc
+==> Building gcc [AutotoolsPackage]
+==> Executing phase: 'autoreconf'
+==> Executing phase: 'configure'
+==> Executing phase: 'build'
+==> Error: ProcessError: Command exited with status 2:
+    'make' '-j12'
+
+6 errors found in build log:
+     9299    	      cp/cp-lang.o c-family/stub-objc.o cp/call.o cp/class.o cp/c
+             onstexpr.o cp/constraint.o cp/cp-gimplify.o cp/cp-objcp-common.o c
+             p/cp-ubsan.o cp/cvt.o cp/cxx-pretty-print.o cp/decl.o cp/decl2.o c
+             p/dump.o cp/error.o cp/except.o cp/expr.o cp/friend.o cp/init.o cp
+             /lambda.o cp/lex.o cp/logic.o cp/mangle.o cp/method.o cp/name-look
+             up.o cp/optimize.o cp/parser.o cp/pt.o cp/ptree.o cp/repo.o cp/rtt
+             i.o cp/search.o cp/semantics.o cp/tree.o cp/typeck.o cp/typeck2.o
+             cp/vtable-class-hierarchy.o attribs.o incpath.o c-family/c-common.
+             o c-family/c-cppbuiltin.o c-family/c-dump.o c-family/c-format.o c-
+             family/c-gimplify.o c-family/c-indentation.o c-family/c-lex.o c-fa
+             mily/c-omp.o c-family/c-opts.o c-family/c-pch.o c-family/c-ppoutpu
+             t.o c-family/c-pragma.o c-family/c-pretty-print.o c-family/c-seman
+             tics.o c-family/c-ada-spec.o c-family/c-ubsan.o c-family/known-hea
+             ders.o c-family/c-attribs.o c-family/c-warn.o c-family/c-spellchec
+             k.o i386-c.o glibc-c.o cc1plus-checksum.o libbackend.a main.o libc
+             ommon-target.a libcommon.a ../libcpp/libcpp.a ../libdecnumber/libd
+             ecnumber.a libcommon.a ../libcpp/libcpp.a   ../libbacktrace/.libs/
+             libbacktrace.a ../libiberty/libiberty.a ../libdecnumber/libdecnumb
+             er.a  -L/home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/lin
+             ux-rhel6-haswell/gcc-7.3.1/isl-0.20-jna4zo5mcjrs4hosyekbprprhjek33
+             2o/lib -lisl -L/home/dantopa/spacktivity/Scientific-Linux-6/opt/sp
+             ack/linux-rhel6-haswell/gcc-7.3.1/gmp-6.1.2-wa5wcd6cnkwsczqwljvlea
+             v7xe5d6zbo/lib -L/home/dantopa/spacktivity/Scientific-Linux-6/opt/
+             spack/linux-rhel6-haswell/gcc-7.3.1/mpfr-3.1.6-dq3h3g37zcfztlta6jm
+             ztesunnkv57uc/lib -L/home/dantopa/spacktivity/Scientific-Linux-6/o
+             pt/spack/linux-rhel6-haswell/gcc-7.3.1/mpc-1.1.0-snkoqc66ywbgpabna
+             dnbs3taqycr2tmx/lib -lmpc -lmpfr -lgmp -rdynamic -ldl  -L/home/dan
+             topa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/
+             gcc-7.3.1/zlib-1.2.11-536svlrers5olrwqwbh3hkjpqpisem6n/lib -lz
+     9300    echo | /tmp/root/spack-stage/spack-stage-gcc-9.2.0-ik6bxbgldivac7p
+             vz7l5ppcnox54wwev/spack-src/spack-build/./gcc/xgcc -B/tmp/root/spa
+             ck-stage/spack-stage-gcc-9.2.0-ik6bxbgldivac7pvz7l5ppcnox54wwev/sp
+             ack-src/spack-build/./gcc/ -E -dM - | \
+     9301    	  sed -n -e 's/^#define \([^_][a-zA-Z0-9_]*\).*/\1/p' \
+     9302    		 -e 's/^#define \(_[^_A-Z][a-zA-Z0-9_]*\).*/\1/p' | \
+     9303    	  sort -u > tmp-macro_list
+     9304    /tmp/root/spack-stage/spack-stage-gcc-9.2.0-ik6bxbgldivac7pvz7l5pp
+             cnox54wwev/spack-src/spack-build/./gcc/xgcc -B/tmp/root/spack-stag
+             e/spack-stage-gcc-9.2.0-ik6bxbgldivac7pvz7l5ppcnox54wwev/spack-src
+             /spack-build/./gcc/ -xc -nostdinc /dev/null -S -o /dev/null -fself
+             -test=/tmp/root/spack-stage/spack-stage-gcc-9.2.0-ik6bxbgldivac7pv
+             z7l5ppcnox54wwev/spack-src/gcc/testsuite/selftests
+  >> 9305    /tmp/root/spack-stage/spack-stage-gcc-9.2.0-ik6bxbgldivac7pvz7l5pp
+             cnox54wwev/spack-src/spack-build/./gcc/cc1: error while loading sh
+             ared libraries: libisl.so.19: cannot open shared object file: No s
+             uch file or directory
+  >> 9306    /tmp/root/spack-stage/spack-stage-gcc-9.2.0-ik6bxbgldivac7pvz7l5pp
+             cnox54wwev/spack-src/spack-build/./gcc/cc1: error while loading sh
+             ared libraries: libisl.so.19: cannot open shared object file: No s
+             uch file or directory
+  >> 9307    make[3]: *** [s-selftest-c] Error 1
+     9308    make[3]: *** Waiting for unfinished jobs....
+     9309    /bin/sh /tmp/root/spack-stage/spack-stage-gcc-9.2.0-ik6bxbgldivac7
+             pvz7l5ppcnox54wwev/spack-src/gcc/../move-if-change tmp-macro_list
+             macro_list
+     9310    echo timestamp > s-macro_list
+     9311    rm gfortran.pod gcc.pod
+     9312    make[3]: Leaving directory `/tmp/root/spack-stage/spack-stage-gcc-
+             9.2.0-ik6bxbgldivac7pvz7l5ppcnox54wwev/spack-src/spack-build/gcc'
+  >> 9313    make[2]: *** [all-stage2-gcc] Error 2
+     9314    make[2]: Leaving directory `/tmp/root/spack-stage/spack-stage-gcc-
+             9.2.0-ik6bxbgldivac7pvz7l5ppcnox54wwev/spack-src/spack-build'
+  >> 9315    make[1]: *** [stage2-bubble] Error 2
+     9316    make[1]: Leaving directory `/tmp/root/spack-stage/spack-stage-gcc-
+             9.2.0-ik6bxbgldivac7pvz7l5ppcnox54wwev/spack-src/spack-build'
+  >> 9317    make: *** [all] Error 2
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-gcc-9.2.0-ik6bxbgldivac7pvz7l5ppcnox54wwev/spack-build-out.txt
+
+==> Error: Spec 'gcc@9.2.0' matches no installed packages.

@@ -1,0 +1,68 @@
+==> Installing julia
+==> Searching for binary cache of julia
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-julia-1.1.1-mfbxzcj3cp2itatxcropb62tq3gmv2wg.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-julia-1.1.1-mfbxzcj3cp2itatxcropb62tq3gmv2wg.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-julia-1.1.1-mfbxzcj3cp2itatxcropb62tq3gmv2wg.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-julia-1.1.1-mfbxzcj3cp2itatxcropb62tq3gmv2wg.spec.yaml failed.
+==> No binary for julia found: installing from source
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/julia/julia-1.1.1.tar.gz
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/julia/julia-1.1.1.tar.gz
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/julia/julia-1.1.1.tar.gz
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/julia/julia-1.1.1.tar.gz failed.
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/_source-cache/archive/3c/3c5395dd3419ebb82d57bcc49dc729df3b225b9094e74376f8c649ee35ed79c2.tar.gz
+###################################################################################################### 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-julia-1.1.1-mfbxzcj3cp2itatxcropb62tq3gmv2wg/julia-1.1.1-full.tar.gz
+==> Created stage in /tmp/root/spack-stage/spack-stage-julia-1.1.1-mfbxzcj3cp2itatxcropb62tq3gmv2wg
+==> No patches needed for julia
+==> Building julia [Package]
+==> Executing phase: 'install'
+==> Error: ProcessError: Command exited with status 1:
+    '/home/dantopa/spacktivity/Scientific-Linux-6/opt/spack/linux-rhel6-haswell/gcc-7.3.1/julia-1.1.1-mfbxzcj3cp2itatxcropb62tq3gmv2wg/bin/julia' '-e' 'import Pkg;Pkg.add("MPI"); using MPI'
+
+3 errors found in build log:
+  >> 4        find: `/tmp/root/spack-stage/spack-stage-julia-1.1.1-mfbxzcj3cp2i
+              tatxcropb62tq3gmv2wg/spack-src/usr/share/julia/stdlib/v1.1/*/src'
+              : No such file or directory
+     5        Creating usr/etc/julia/startup.jl
+     6        Copying in usr/share/man/man1/julia.1
+     7        /tmp/root/spack-stage/spack-stage-julia-1.1.1-mfbxzcj3cp2itatxcro
+              pb62tq3gmv2wg/spack-src/contrib/install.sh 755 /tmp/root/spack-st
+              age/spack-stage-julia-1.1.1-mfbxzcj3cp2itatxcropb62tq3gmv2wg/spac
+              k-src/contrib/julia-config.jl /tmp/root/spack-stage/spack-stage-j
+              ulia-1.1.1-mfbxzcj3cp2itatxcropb62tq3gmv2wg/spack-src/usr/share/j
+              ulia/
+     8        Warning: git information unavailable; versioning information limi
+              ted
+     9        Warning: git information unavailable; versioning information limi
+              ted
+  >> 10       rm: cannot remove `scratch/dsfmt-2.2.3/': No such file or directo
+              ry
+     11       patching file dSFMT.h
+     12       Hunk #2 succeeded at 181 (offset 2 lines).
+     13       Hunk #3 succeeded at 202 (offset 2 lines).
+     14       Hunk #4 succeeded at 220 (offset 2 lines).
+     15       Hunk #5 succeeded at 244 (offset 2 lines).
+     16       Hunk #6 succeeded at 265 (offset 2 lines).
+
+     ...
+
+     21535    To install the library, you can run "make PREFIX=/path/to/your/in
+              stallation install".
+     21536
+     21537    ar: creating libcerbla.a
+     21538    a - xerbla.o
+     21539    ar: creating libsuitesparseconfig.a
+     21540    a - SuiteSparse_config.o
+  >> 21541    /bin/sh: line 0: cd: metis-4.0: No such file or directory
+     21542    ar: creating libamd.a
+     21543    a - amd_i_aat.o
+     21544    a - amd_i_1.o
+     21545    a - amd_i_2.o
+     21546    a - amd_i_dump.o
+     21547    a - amd_i_postorder.o
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-julia-1.1.1-mfbxzcj3cp2itatxcropb62tq3gmv2wg/spack-build-out.txt
