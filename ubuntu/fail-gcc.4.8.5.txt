@@ -1,0 +1,160 @@
+==> Installing gcc
+==> Searching for binary cache of gcc
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il.spec.yaml failed.
+==> No binary for gcc found: installing from source
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/gcc/gcc-4.8.5.tar.bz2
+################################################################################################################################################################# 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/gcc-4.8.5.tar.bz2
+==> Created stage in /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il
+==> Applied patch /home/dantopa/spacktivity/ubuntu-spack/var/spack/repos/builtin/packages/gcc/gcc-backport.patch
+==> Ran patch() for gcc
+==> Building gcc [AutotoolsPackage]
+==> Executing phase: 'autoreconf'
+==> Executing phase: 'configure'
+==> Executing phase: 'build'
+==> Error: ProcessError: Command exited with status 2:
+    'make' '-j12'
+
+3 errors found in build log:
+     26911      done; \
+     26912    else \
+     26913      echo ";"; \
+     26914    fi > tmp-fixinc_list
+     26915    echo GCC_CFLAGS = '-g -O2 -DIN_GCC   -W -Wall -Wno-narrowing -Wwrite-strings -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition
+               -isystem ./include ' >> tmp-libgcc.mvars
+     26916    echo INHIBIT_LIBC_CFLAGS = '' >> tmp-libgcc.mvars
+  >> 26917    xgcc: error trying to exec 'cc1': execvp: No such file or directory
+     26918    /bin/bash /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/gcc/../move-if-change tmp-fixinc_list fixinc_list
+     26919    /bin/bash /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/gcc/../move-if-change tmp-macro_list macro_list
+     26920    echo TARGET_SYSTEM_ROOT = '' >> tmp-libgcc.mvars
+     26921    insn-latencytab.c: In function 'int insn_default_latency_none(rtx)':
+     26922    insn-latencytab.c:46:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     26923       46 |       if (GET_CODE (PATTERN (insn)) != ASM_INPUT
+
+     ...
+
+     30484    /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/xgcc -B/tmp/root/spack-stage/spack-stage-gcc-4.8
+              .5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/g
+              cc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/bin/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-
+              9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/lib/ -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.0
+              4-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/include -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack
+              /linux-ubuntu20.04-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/sys-include    -g -O2 -O2  -g -O2 -DIN_GCC   -W
+              -Wall -Wno-narrowing -Wwrite-strings -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition  -isystem ./include   -fpic -mlong-doubl
+              e-80 -g -DIN_LIBGCC2 -fbuilding-libgcc -fno-stack-protector   -fpic -mlong-double-80 -I. -I. -I../.././gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-
+              4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/. -I/tm
+              p/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du4
+              22uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../include -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/confi
+              g/libbid -DENABLE_DECIMAL_BID_FORMAT -DHAVE_CC_TLS  -DUSE_TLS -o unwind-sjlj.o -MT unwind-sjlj.o -MD -MP -MF unwind-sjlj.dep -fexceptions -c /tmp/root/sp
+              ack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/unwind-sjlj.c -fvisibility=hidden -DHIDE_EXPORTS
+     30485    /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/xgcc -B/tmp/root/spack-stage/spack-stage-gcc-4.8
+              .5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/g
+              cc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/bin/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-
+              9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/lib/ -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.0
+              4-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/include -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack
+              /linux-ubuntu20.04-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/sys-include    -g -O2 -O2  -g -O2 -DIN_GCC   -W
+              -Wall -Wno-narrowing -Wwrite-strings -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition  -isystem ./include   -fpic -mlong-doubl
+              e-80 -g -DIN_LIBGCC2 -fbuilding-libgcc -fno-stack-protector   -fpic -mlong-double-80 -I. -I. -I../.././gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-
+              4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/. -I/tm
+              p/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du4
+              22uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../include -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/confi
+              g/libbid -DENABLE_DECIMAL_BID_FORMAT -DHAVE_CC_TLS  -DUSE_TLS -o unwind-c.o -MT unwind-c.o -MD -MP -MF unwind-c.dep -fexceptions -c /tmp/root/spack-stage
+              /spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/unwind-c.c -fvisibility=hidden -DHIDE_EXPORTS
+     30486    /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/xgcc -B/tmp/root/spack-stage/spack-stage-gcc-4.8
+              .5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/g
+              cc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/bin/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-
+              9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/lib/ -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.0
+              4-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/include -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack
+              /linux-ubuntu20.04-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/sys-include    -g -O2 -O2  -g -O2 -DIN_GCC   -W
+              -Wall -Wno-narrowing -Wwrite-strings -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition  -isystem ./include   -fpic -mlong-doubl
+              e-80 -g -DIN_LIBGCC2 -fbuilding-libgcc -fno-stack-protector   -fpic -mlong-double-80 -I. -I. -I../.././gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-
+              4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/. -I/tm
+              p/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du4
+              22uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../include -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/confi
+              g/libbid -DENABLE_DECIMAL_BID_FORMAT -DHAVE_CC_TLS  -DUSE_TLS -o emutls.o -MT emutls.o -MD -MP -MF emutls.dep -fexceptions -c /tmp/root/spack-stage/spack
+              -stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/emutls.c -fvisibility=hidden -DHIDE_EXPORTS
+     30487    /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/xgcc -B/tmp/root/spack-stage/spack-stage-gcc-4.8
+              .5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/g
+              cc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/bin/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-
+              9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/lib/ -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.0
+              4-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/include -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack
+              /linux-ubuntu20.04-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/sys-include    -g -O2 -O2  -g -O2 -DIN_GCC   -W
+              -Wall -Wno-narrowing -Wwrite-strings -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition  -isystem ./include   -fpic -mlong-doubl
+              e-80 -g -DIN_LIBGCC2 -fbuilding-libgcc -fno-stack-protector   -fpic -mlong-double-80 -I. -I. -I../.././gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-
+              4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/. -I/tm
+              p/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du4
+              22uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../include -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/confi
+              g/libbid -DENABLE_DECIMAL_BID_FORMAT -DHAVE_CC_TLS  -DUSE_TLS -o _muldi3_s.o -MT _muldi3_s.o -MD -MP -MF _muldi3_s.dep -DSHARED -DL_muldi3 -c /tmp/root/s
+              pack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/libgcc2.c
+     30488    In file included from /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/unwind-dw2.c:405:0:
+     30489    ./md-unwind-support.h: In function 'x86_64_fallback_frame_state':
+  >> 30490    ./md-unwind-support.h:65:47: error: dereferencing pointer to incomplete type
+     30491           sc = (struct sigcontext *) (void *) &uc_->uc_mcontext;
+     30492                                                   ^
+     30493    /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/xgcc -B/tmp/root/spack-stage/spack-stage-gcc-4.8
+              .5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/g
+              cc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/bin/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-
+              9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/lib/ -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.0
+              4-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/include -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack
+              /linux-ubuntu20.04-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/sys-include    -g -O2 -O2  -g -O2 -DIN_GCC   -W
+              -Wall -Wno-narrowing -Wwrite-strings -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition  -isystem ./include   -fpic -mlong-doubl
+              e-80 -g -DIN_LIBGCC2 -fbuilding-libgcc -fno-stack-protector   -fpic -mlong-double-80 -I. -I. -I../.././gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-
+              4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/. -I/tm
+              p/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du4
+              22uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../include -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/confi
+              g/libbid -DENABLE_DECIMAL_BID_FORMAT -DHAVE_CC_TLS  -DUSE_TLS -o _negdi2_s.o -MT _negdi2_s.o -MD -MP -MF _negdi2_s.dep -DSHARED -DL_negdi2 -c /tmp/root/s
+              pack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/libgcc2.c
+     30494    /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/xgcc -B/tmp/root/spack-stage/spack-stage-gcc-4.8
+              .5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/g
+              cc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/bin/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-
+              9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/lib/ -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.0
+              4-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/include -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack
+              /linux-ubuntu20.04-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/sys-include    -g -O2 -O2  -g -O2 -DIN_GCC   -W
+              -Wall -Wno-narrowing -Wwrite-strings -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition  -isystem ./include   -fpic -mlong-doubl
+              e-80 -g -DIN_LIBGCC2 -fbuilding-libgcc -fno-stack-protector   -fpic -mlong-double-80 -I. -I. -I../.././gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-
+              4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/. -I/tm
+              p/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du4
+              22uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../include -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/confi
+              g/libbid -DENABLE_DECIMAL_BID_FORMAT -DHAVE_CC_TLS  -DUSE_TLS -o _lshrdi3_s.o -MT _lshrdi3_s.o -MD -MP -MF _lshrdi3_s.dep -DSHARED -DL_lshrdi3 -c /tmp/ro
+              ot/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/libgcc2.c
+     30495    /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/xgcc -B/tmp/root/spack-stage/spack-stage-gcc-4.8
+              .5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/g
+              cc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/bin/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-
+              9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/lib/ -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.0
+              4-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/include -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack
+              /linux-ubuntu20.04-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/sys-include    -g -O2 -O2  -g -O2 -DIN_GCC   -W
+              -Wall -Wno-narrowing -Wwrite-strings -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition  -isystem ./include   -fpic -mlong-doubl
+              e-80 -g -DIN_LIBGCC2 -fbuilding-libgcc -fno-stack-protector   -fpic -mlong-double-80 -I. -I. -I../.././gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-
+              4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/. -I/tm
+              p/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du4
+              22uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../include -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/confi
+              g/libbid -DENABLE_DECIMAL_BID_FORMAT -DHAVE_CC_TLS  -DUSE_TLS -o _ashldi3_s.o -MT _ashldi3_s.o -MD -MP -MF _ashldi3_s.dep -DSHARED -DL_ashldi3 -c /tmp/ro
+              ot/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/libgcc2.c
+     30496    /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/xgcc -B/tmp/root/spack-stage/spack-stage-gcc-4.8
+              .5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/./gcc/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/g
+              cc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/bin/ -B/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-
+              9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/lib/ -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.0
+              4-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/include -isystem /home/dantopa/spacktivity/ubuntu-spack/opt/spack
+              /linux-ubuntu20.04-haswell/gcc-9.2.1/gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/x86_64-unknown-linux-gnu/sys-include    -g -O2 -O2  -g -O2 -DIN_GCC   -W
+              -Wall -Wno-narrowing -Wwrite-strings -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition  -isystem ./include   -fpic -mlong-doubl
+              e-80 -g -DIN_LIBGCC2 -fbuilding-libgcc -fno-stack-protector   -fpic -mlong-double-80 -I. -I. -I../.././gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-
+              4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/. -I/tm
+              p/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../gcc -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du4
+              22uj3xnm2mfoclecmdfi2il/spack-src/libgcc/../include -I/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/confi
+              g/libbid -DENABLE_DECIMAL_BID_FORMAT -DHAVE_CC_TLS  -DUSE_TLS -o _ashrdi3_s.o -MT _ashrdi3_s.o -MD -MP -MF _ashrdi3_s.dep -DSHARED -DL_ashrdi3 -c /tmp/ro
+              ot/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/libgcc2.c
+  >> 30497    make[3]: *** [/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/libgcc/shared-object.mk:14: unwind-dw2.o] Error 1
+     30498    make[3]: *** Waiting for unfinished jobs....
+     30499    make[3]: Leaving directory '/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build/x86_64-unknown-linux-gnu/l
+              ibgcc'
+     30500    make[2]: *** [Makefile:15571: all-stage1-target-libgcc] Error 2
+     30501    make[2]: Leaving directory '/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build'
+     30502    make[1]: *** [Makefile:19785: stage1-bubble] Error 2
+     30503    make[1]: Leaving directory '/tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-src/spack-build'
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-gcc-4.8.5-4cucy7du422uj3xnm2mfoclecmdfi2il/spack-build-out.txt

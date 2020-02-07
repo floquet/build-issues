@@ -1,0 +1,40 @@
+==> Installing pslib
+==> Searching for binary cache of pslib
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-pslib-0.4.5-oz6x7pvnqgohg3xdccul7rkplgdgtv3y.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-pslib-0.4.5-oz6x7pvnqgohg3xdccul7rkplgdgtv3y.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-pslib-0.4.5-oz6x7pvnqgohg3xdccul7rkplgdgtv3y.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-fedora31-haswell-gcc-9.2.1-pslib-0.4.5-oz6x7pvnqgohg3xdccul7rkplgdgtv3y.spec.yaml failed.
+==> No binary for pslib found: installing from source
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/pslib/pslib-0.4.5.tar.gz
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/pslib/pslib-0.4.5.tar.gz
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/pslib/pslib-0.4.5.tar.gz
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/pslib/pslib-0.4.5.tar.gz failed.
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/_source-cache/archive/7a/7a33928982b281660206bb3749a4a563e3ac987eea64f41696f212df345212be.tar.gz
+################################################################################################################################ 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-pslib-0.4.5-oz6x7pvnqgohg3xdccul7rkplgdgtv3y/pslib-0.4.5.tar.gz
+==> Created stage in /tmp/root/spack-stage/spack-stage-pslib-0.4.5-oz6x7pvnqgohg3xdccul7rkplgdgtv3y
+==> No patches needed for pslib
+==> Building pslib [AutotoolsPackage]
+==> Executing phase: 'autoreconf'
+==> Executing phase: 'configure'
+==> Error: ProcessError: Command exited with status 1:
+    '/tmp/root/spack-stage/spack-stage-pslib-0.4.5-oz6x7pvnqgohg3xdccul7rkplgdgtv3y/spack-src/configure' '--prefix=/home/dantopa/scratch/spacktivity/fedora-spack/opt/spack/linux-fedora31-haswell/gcc-9.2.1/pslib-0.4.5-oz6x7pvnqgohg3xdccul7rkplgdgtv3y'
+
+1 error found in build log:
+     19    checking whether /home/dantopa/scratch/spacktivity/fedora-spack/lib/spack/env/gcc/gcc accepts -g... yes
+     20    checking for /home/dantopa/scratch/spacktivity/fedora-spack/lib/spack/env/gcc/gcc option to accept ISO C89... none needed
+     21    checking dependency style of /home/dantopa/scratch/spacktivity/fedora-spack/lib/spack/env/gcc/gcc... gcc3
+     22    checking for intltool-update... no
+     23    checking for intltool-merge... no
+     24    checking for intltool-extract... no
+  >> 25    configure: error: The intltool scripts were not found. Please install intltool.
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-pslib-0.4.5-oz6x7pvnqgohg3xdccul7rkplgdgtv3y/spack-build-out.txt
+
+root@a65fc7a0680d:fedora-spack $ spack install intltool
+==> intltool is already installed in /home/dantopa/scratch/spacktivity/fedora-spack/opt/spack/linux-fedora31-haswell/gcc-9.2.1/intltool-0.51.0-6z34e3cm5te3jz2vpotxp3qw4nff2tvg
+==> intltool@0.51.0 : marking the package explicit

@@ -1,0 +1,62 @@
+==> Installing suite-sparse
+==> Searching for binary cache of suite-sparse
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel.spec.yaml failed.
+==> No binary for suite-sparse found: installing from source
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/suite-sparse/suite-sparse-5.6.0.tar.gz
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/suite-sparse/suite-sparse-5.6.0.tar.gz
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/suite-sparse/suite-sparse-5.6.0.tar.gz
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/suite-sparse/suite-sparse-5.6.0.tar.gz failed.
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/_source-cache/archive/76/76d34d9f6dafc592b69af14f58c1dc59e24853dcd7c2e8f4c98ffa223f6a1adb.tar.gz
+################################################################################################################################################################# 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel/v5.6.0.tar.gz
+==> Created stage in /tmp/root/spack-stage/spack-stage-suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel
+==> No patches needed for suite-sparse
+==> Building suite-sparse [Package]
+==> Executing phase: 'install'
+==> Error: ProcessError: Command exited with status 2:
+    'make' '-j12' 'default' 'INSTALL=/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel' 'AUTOCC=no' 'CUDA=no' 'CUDA_PATH=' 'CFOPENMP=' 'CFLAGS=-O3 -fPIC' 'FFLAGS=-fPIC' 'F77FLAGS=-fPIC' 'MY_METIS_LIB=-L/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/metis-5.1.0-az6ru4jgqqs6sdepk4kwqd5stuit46qp/lib -lmetis' 'MY_METIS_INC=/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/metis-5.1.0-az6ru4jgqqs6sdepk4kwqd5stuit46qp/include' 'BLAS=-L/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/openblas-0.3.7-p5k7iibmxlyy7z7tytee2v5xwg2w3tmn/lib -lopenblas' 'LAPACK=-L/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/openblas-0.3.7-p5k7iibmxlyy7z7tytee2v5xwg2w3tmn/lib -lopenblas' 'CFLAGS+=-fno-common -fexceptions' 'CMAKE_OPTIONS=-DCMAKE_INSTALL_PREFIX=/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel -DCMAKE_LIBRARY_PATH=/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel/lib'
+
+4 errors found in build log:
+     436    /home/dantopa/spacktivity/ubuntu-spack/lib/spack/env/gcc/gcc -O3 -fPIC -fno-common -fexceptions   -O3 -fexceptions -fPIC  -I../../include -o amd_demo amd_d
+            emo.c -L/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel/lib -L../.
+            ./lib -lamd -lsuitesparseconfig -lm -lrt -Wl,-rpath=/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/suite-sparse-5.6.0
+            -3426nb7rkghyad256vjhoyo3inq5hyel/lib
+     437    /home/dantopa/spacktivity/ubuntu-spack/lib/spack/env/gcc/gcc -O3 -fPIC -fno-common -fexceptions   -O3 -fexceptions -fPIC  -I../../include -o amd_demo2 amd_
+            demo2.c -L/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel/lib -L..
+            /../lib -lamd -lsuitesparseconfig -lm -lrt -Wl,-rpath=/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/suite-sparse-5.6
+            .0-3426nb7rkghyad256vjhoyo3inq5hyel/lib
+     438
+     439    /home/dantopa/spacktivity/ubuntu-spack/lib/spack/env/gcc/gcc -O3 -fPIC -fno-common -fexceptions   -O3 -fexceptions -fPIC  -I../../include -o amd_simple amd
+            _simple.c -L/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel/lib -L
+            ../../lib -lamd -lsuitesparseconfig -lm -lrt -Wl,-rpath=/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/suite-sparse-5
+            .6.0-3426nb7rkghyad256vjhoyo3inq5hyel/lib
+     440    /home/dantopa/spacktivity/ubuntu-spack/lib/spack/env/gcc/gcc -O3 -fPIC -fno-common -fexceptions   -O3 -fexceptions -fPIC  -I../../include -o amd_l_demo amd
+            _l_demo.c -L/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel/lib -L
+            ../../lib -lamd -lsuitesparseconfig -lm -lrt -Wl,-rpath=/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/suite-sparse-5
+            .6.0-3426nb7rkghyad256vjhoyo3inq5hyel/lib
+     441    ./amd_simple > my_amd_simple.out
+  >> 442    ./amd_simple: error while loading shared libraries: libamd.so.2: cannot open shared object file: No such file or directory
+     443    make[2]: *** [Makefile:47: amd_simple] Error 127
+     444    make[2]: *** Waiting for unfinished jobs....
+     445    ./amd_l_demo > my_amd_l_demo.out
+  >> 446    ./amd_l_demo: error while loading shared libraries: libamd.so.2: cannot open shared object file: No such file or directory
+     447    make[2]: *** [Makefile:36: amd_l_demo] Error 127
+     448    ./amd_demo > my_amd_demo.out
+  >> 449    ./amd_demo: error while loading shared libraries: libamd.so.2: cannot open shared object file: No such file or directory
+     450    make[2]: *** [Makefile:31: amd_demo] Error 127
+     451    ./amd_demo2 > my_amd_demo2.out
+  >> 452    ./amd_demo2: error while loading shared libraries: libamd.so.2: cannot open shared object file: No such file or directory
+     453    make[2]: *** [Makefile:41: amd_demo2] Error 127
+     454    make[2]: Leaving directory '/tmp/root/spack-stage/spack-stage-suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel/spack-src/AMD/Demo'
+     455    make[1]: *** [Makefile:17: all] Error 2
+     456    make[1]: Leaving directory '/tmp/root/spack-stage/spack-stage-suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel/spack-src/AMD'
+     457    make: *** [Makefile:16: go] Error 2
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-suite-sparse-5.6.0-3426nb7rkghyad256vjhoyo3inq5hyel/spack-build-out.txt

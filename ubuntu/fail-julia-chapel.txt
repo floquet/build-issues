@@ -1,0 +1,103 @@
+==> Installing julia
+==> Searching for binary cache of julia
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2.spec.yaml failed.
+==> No binary for julia found: installing from source
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/julia/julia-1.1.1.tar.gz
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/julia/julia-1.1.1.tar.gz
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/julia/julia-1.1.1.tar.gz
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/julia/julia-1.1.1.tar.gz failed.
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/_source-cache/archive/3c/3c5395dd3419ebb82d57bcc49dc729df3b225b9094e74376f8c649ee35ed79c2.tar.gz
+################################################################################################################################################################# 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/julia-1.1.1-full.tar.gz
+==> Created stage in /tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2
+==> No patches needed for julia
+==> Building julia [Package]
+==> Executing phase: 'install'
+==> Error: ProcessError: Command exited with status 1:
+    '/home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/bin/julia' '-e' 'import Pkg;Pkg.add("MPI"); using MPI'
+
+2 errors found in build log:
+  >> 4     find: '/tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/spack-src/usr/share/julia/stdlib/v1.1/*/src': No such file or director
+           y
+     5     /tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/spack-src/contrib/install.sh 755 /tmp/root/spack-stage/spack-stage-julia-1.1.
+           1-6vtubtp462jxaik3xmm3ekqtumibl2d2/spack-src/contrib/julia-config.jl /tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/spack-sr
+           c/usr/share/julia/
+     6     Creating usr/etc/julia/startup.jl
+     7     Copying in usr/share/man/man1/julia.1
+     8     Warning: git information unavailable; versioning information limited
+     9     Warning: git information unavailable; versioning information limited
+  >> 10    rm: cannot remove 'scratch/dsfmt-2.2.3/': No such file or directory
+     11    patching file dSFMT.h
+     12    Hunk #2 succeeded at 181 (offset 2 lines).
+     13    Hunk #3 succeeded at 202 (offset 2 lines).
+     14    Hunk #4 succeeded at 220 (offset 2 lines).
+     15    Hunk #5 succeeded at 244 (offset 2 lines).
+     16    Hunk #6 succeeded at 265 (offset 2 lines).
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-julia-1.1.1-6vtubtp462jxaik3xmm3ekqtumibl2d2/spack-build-out.txt
+
+
+Step 15: spack install chapel  % gcc@9.2.1 arch=linux-ubuntu20.04-haswell
+==> Installing chapel
+==> Searching for binary cache of chapel
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-ubuntu20.04-haswell-gcc-9.2.1-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q.spec.yaml failed.
+==> No binary for chapel found: installing from source
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/chapel/chapel-1.20.0.tar.gz
+################################################################################################################################################################# 100.0%
+==> Staging archive: /tmp/root/spack-stage/spack-stage-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q/chapel-1.20.0.tar.gz
+==> Created stage in /tmp/root/spack-stage/spack-stage-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q
+==> No patches needed for chapel
+==> Building chapel [AutotoolsPackage]
+==> Executing phase: 'autoreconf'
+==> Executing phase: 'configure'
+==> Executing phase: 'build'
+==> Error: ProcessError: Command exited with status 2:
+    'make' '-j12'
+
+5 errors found in build log:
+  >> 4     /usr/bin/env: 'python': No such file or directory
+     5
+     6       Currently selected Chapel configuration:
+     7
+  >> 8     /usr/bin/env: 'python': No such file or directory
+     9
+     10      Selected installation options:
+     11
+     12    PREFIX: /home/dantopa/spacktivity/ubuntu-spack/opt/spack/linux-ubuntu20.04-haswell/gcc-9.2.1/chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q
+     13
+     14      To change the selected Chapel configuration, set environment variables.
+
+     ...
+
+     27
+     28    make check
+     29
+     30    ==> Executing phase: 'build'
+     31    ==> [2020-02-06-05:29:49.022897] 'make' '-j12'
+     32    Making the compiler...
+  >> 33    /usr/bin/env: 'python': No such file or directory
+     34    Makefile:164: warning: overriding recipe for target '/tmp/root/spack-stage/spack-stage-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q/spack-src/bin//chpl'
+     35    Makefile:159: warning: ignoring old recipe for target '/tmp/root/spack-stage/spack-stage-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q/spack-src/bin//chpl'
+     36    Makefile:182: warning: overriding recipe for target '/tmp/root/spack-stage/spack-stage-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q/spack-src/bin/'
+     37    Makefile:179: warning: ignoring old recipe for target '/tmp/root/spack-stage/spack-stage-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q/spack-src/bin/'
+  >> 38    /tmp/root/spack-stage/spack-stage-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q/spack-src/make/Makefile.base:178: /tmp/root/spack-stage/spack-stage-chapel-
+           1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q/spack-src/third-party/llvm/Makefile.include-: No such file or directory
+  >> 39    make[2]: *** No rule to make target '/tmp/root/spack-stage/spack-stage-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q/spack-src/third-party/llvm/Makefile.in
+           clude-'.  Stop.
+     40    make[1]: *** [Makefile:76: compiler] Error 2
+     41    make: *** [Makefile:60: comprt] Error 2
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-chapel-1.20.0-kakxadtyo6ixdlkzoeumenwusispdn2q/spack-build-out.txt
