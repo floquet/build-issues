@@ -1,0 +1,177 @@
+==> Installing paraview
+==> Searching for binary cache of paraview
+==> Finding buildcaches in /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache
+==> Fetching file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx.spec.yaml
+curl: (37) Couldn't open file /Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx.spec.yaml
+==> Failed to fetch file from URL: file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx.spec.yaml
+    Curl failed with error 37
+==> Fetching from file:///Dropbox/2nd-generation/spacktivity/new-mirror/build_cache/linux-rhel6-haswell-gcc-7.3.1-paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx.spec.yaml failed.
+==> No binary for paraview found: installing from source
+/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/python-3.7.6-nmhc4ptisk24mdguxdhlixoyyhx4ea7k/bin/python3.7: error while loading shared libraries: libpython3.7m.so.1.0: cannot open shared object file: No such file or directory
+==> Using cached archive: /home/dantopa/spacktivity/Scientific-Linux-6.spack/var/spack/cache/_source-cache/archive/e4/e41e597e1be462974a03031380d9e5ba9a7efcdb22e4ca2f3fec50361f310874.tar.xz
+==> Staging archive: /tmp/root/spack-stage/spack-stage-paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx/ParaView-v5.7.0.tar.xz
+==> Created stage in /tmp/root/spack-stage/spack-stage-paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx
+==> No patches needed for paraview
+==> Building paraview [CMakePackage]
+==> Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 127:
+    'cmake' '/tmp/root/spack-stage/spack-stage-paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx/spack-src' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:PATH=/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=FALSE' '-DCMAKE_INSTALL_RPATH:STRING=/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx/lib64;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/bzip2-1.0.8-ra2oqvey7ue73bjnjure3fpxuxemj2vi/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/expat-2.2.9-27wfackbyndluglxxrqjsrdyizm3egvq/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libbsd-0.10.0-g5qx5tqoyxphqtm7dmjgzjqqgwoaprge/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/freetype-2.10.1-si6meqkrfrj2w6xzgxs5xcdhqmbw2gze/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libpng-1.6.37-2sicyksn5jh2jxq324qz75qr4hcdfpwi/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/zlib-1.2.11-536svlrers5olrwqwbh3hkjpqpisem6n/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libtiff-4.0.10-ptywfxm6yc3vmltvpxhyhf7uoj4vrnbe/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/xz-5.2.4-zvdyq4uacvsqzolxu32cwo3g43xswly2/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libxml2-2.9.9-xvzed5obfj7ztzgjcbxtbxdlbgk3pa66/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libiconv-1.16-i645o7phebjxxqimmqaw74sbn2dcqkcb/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libxt-1.1.5-e3jhcdlhtjye6sngcm2myevgay22k6wi/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libice-1.0.9-qredskq5qo6yxsynuuxzjjgkpb4xyhms/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libsm-1.2.2-xnb6lfhipfth7pn6aee5gdlcw2oepls5/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libx11-1.6.7-qrnxlihmfjpx3hfss5hiqevpse2s6xgc/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/kbproto-1.0.7-qobyddafa7msvn5xjhnjzdlztalpcufj/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libxcb-1.13-tzpyaakkwobl5awkl54nj7rsyd2fokvf/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libpthread-stubs-0.4-a2u3qvcvsv2hkfpilkm5y3pia4qaem3m/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libxau-1.0.8-wga5ruzazpphuf27frbmezcithbu3fad/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/xproto-7.0.31-lekttijkonnavjnj3m6adce2kauzoej6/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libxdmcp-1.1.2-cdcioomaxpoihikdpxea64y3gxcaqldn/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/xextproto-7.3.0-b77pkdo4ffonnldw26bo222uyblduzk7/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/mesa-18.3.6-hotbintqjazg4w4exnqdz5dfq5giuyxk/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libxext-1.3.3-ti2l5isu44sjtjbpvzm4pm3pfwlrklzo/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/llvm-9.0.0-lzjjn6fee7nm2agh46b7upwlhlakyubo/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/binutils-2.33.1-ho32l4mxozxjt6pejgcxybyopkwqh5zc/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/gettext-0.20.1-wk6vix7c5qonnkirzguhbovroqgyinow/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/ncurses-6.1-bg2fgpnhlpmgrpqfcwnzxvvcekuhska7/lib;/usr/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libedit-3.1-20170329-3lvgebxflgaduzbytwhr2dqm7jmjrayq/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/pcre-8.42-tzdaeraqdx2zzorsxmhgoyi25s5um2m5/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/netcdf-c-4.7.3-ehz5ovt5xsyseplf2s7edbveuod3mlq2/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/hdf5-1.10.6-fskytiryzcqa2nm6qkjpblcfdcw3z4za/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/openmpi-3.1.5-m6oh65yd65dnetlt637enq2el2eoy2hn/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/hwloc-1.11.11-xng7h334tvz77fyczf2w43vfsqla3wcn/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libpciaccess-0.13.5-zksjc37owumssavmluvkcjftcq6awuec/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/numactl-2.0.12-qjxbbk62gwcolxuzhb6hmi3kfcxrbk5w/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libjpeg-turbo-2.0.3-blu7in7xcsq3ercg5ypc52fzlrxo6ojc/lib64;/usr/lib64' '-DCMAKE_PREFIX_PATH:STRING=/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/bzip2-1.0.8-ra2oqvey7ue73bjnjure3fpxuxemj2vi;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/zlib-1.2.11-536svlrers5olrwqwbh3hkjpqpisem6n;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/cmake-3.16.2-spxvb3wwanebgtaaq3erfqklay3kpvqg;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libxml2-2.9.9-xvzed5obfj7ztzgjcbxtbxdlbgk3pa66;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libtiff-4.0.10-ptywfxm6yc3vmltvpxhyhf7uoj4vrnbe;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/freetype-2.10.1-si6meqkrfrj2w6xzgxs5xcdhqmbw2gze;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/openmpi-3.1.5-m6oh65yd65dnetlt637enq2el2eoy2hn;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libxt-1.1.5-e3jhcdlhtjye6sngcm2myevgay22k6wi;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libjpeg-turbo-2.0.3-blu7in7xcsq3ercg5ypc52fzlrxo6ojc;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libpng-1.6.37-2sicyksn5jh2jxq324qz75qr4hcdfpwi;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/mesa-18.3.6-hotbintqjazg4w4exnqdz5dfq5giuyxk;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/expat-2.2.9-27wfackbyndluglxxrqjsrdyizm3egvq;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/netcdf-c-4.7.3-ehz5ovt5xsyseplf2s7edbveuod3mlq2' '-DPARAVIEW_BUILD_QT_GUI:BOOL=OFF' '-DVTK_OPENGL_HAS_OSMESA:BOOL=OFF' '-DVTK_USE_X:BOOL=ON' '-DVTK_RENDERING_BACKEND:STRING=OpenGL2' '-DPARAVIEW_INSTALL_DEVELOPMENT_FILES:BOOL=ON' '-DBUILD_TESTING:BOOL=OFF' '-DBUILD_EXAMPLES:BOOL=OFF' '-DVTK_USE_SYSTEM_FREETYPE:BOOL=ON' '-DVTK_USE_SYSTEM_HDF5:BOOL=OFF' '-DVTK_USE_SYSTEM_JPEG:BOOL=ON' '-DVTK_USE_SYSTEM_LIBXML2:BOOL=ON' '-DVTK_USE_SYSTEM_NETCDF:BOOL=ON' '-DVTK_USE_SYSTEM_EXPAT:BOOL=ON' '-DVTK_USE_SYSTEM_TIFF:BOOL=ON' '-DVTK_USE_SYSTEM_ZLIB:BOOL=ON' '-DVTK_USE_SYSTEM_PNG:BOOL=ON' '-DOpenGL_GL_PREFERENCE:STRING=LEGACY' '-DPARAVIEW_ENABLE_PYTHON:BOOL=OFF' '-DPARAVIEW_USE_MPI:BOOL=ON' '-DMPIEXEC:FILEPATH=/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/openmpi-3.1.5-m6oh65yd65dnetlt637enq2el2eoy2hn/bin/mpiexec' '-DMPI_CXX_COMPILER:PATH=/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/openmpi-3.1.5-m6oh65yd65dnetlt637enq2el2eoy2hn/bin/mpic++' '-DMPI_C_COMPILER:PATH=/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/openmpi-3.1.5-m6oh65yd65dnetlt637enq2el2eoy2hn/bin/mpicc' '-DMPI_Fortran_COMPILER:PATH=/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/openmpi-3.1.5-m6oh65yd65dnetlt637enq2el2eoy2hn/bin/mpif90' '-DPARAVIEW_BUILD_SHARED_LIBS:BOOL=ON' '-DPARAVIEW_USE_CUDA:BOOL=OFF'
+
+1 error found in build log:
+     1    ==> Executing phase: 'cmake'
+     2    ==> [2020-02-09-04:14:09.166241] 'cmake' '/tmp/root/spack-stage/spack
+          -stage-paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx/spack-src' '-G
+          ' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:PATH=/home/dantopa/spackti
+          vity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1
+          /paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx' '-DCMAKE_BUILD_TYPE
+          :STRING=RelWithDebInfo' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_I
+          NSTALL_RPATH_USE_LINK_PATH:BOOL=FALSE' '-DCMAKE_INSTALL_RPATH:STRING=
+          /home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rh
+          el6-haswell/gcc-7.3.1/paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx
+          /lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/lin
+          ux-rhel6-haswell/gcc-7.3.1/paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulv
+          uu7qx/lib64;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/sp
+          ack/linux-rhel6-haswell/gcc-7.3.1/bzip2-1.0.8-ra2oqvey7ue73bjnjure3fp
+          xuxemj2vi/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/
+          spack/linux-rhel6-haswell/gcc-7.3.1/expat-2.2.9-27wfackbyndluglxxrqjs
+          rdyizm3egvq/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/op
+          t/spack/linux-rhel6-haswell/gcc-7.3.1/libbsd-0.10.0-g5qx5tqoyxphqtm7d
+          mjgzjqqgwoaprge/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spac
+          k/opt/spack/linux-rhel6-haswell/gcc-7.3.1/freetype-2.10.1-si6meqkrfrj
+          2w6xzgxs5xcdhqmbw2gze/lib;/home/dantopa/spacktivity/Scientific-Linux-
+          6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libpng-1.6.37-2sicyks
+          n5jh2jxq324qz75qr4hcdfpwi/lib;/home/dantopa/spacktivity/Scientific-Li
+          nux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/zlib-1.2.11-536sv
+          lrers5olrwqwbh3hkjpqpisem6n/lib;/home/dantopa/spacktivity/Scientific-
+          Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libtiff-4.0.10-
+          ptywfxm6yc3vmltvpxhyhf7uoj4vrnbe/lib;/home/dantopa/spacktivity/Scient
+          ific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/xz-5.2.4-z
+          vdyq4uacvsqzolxu32cwo3g43xswly2/lib;/home/dantopa/spacktivity/Scienti
+          fic-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libxml2-2.9
+          .9-xvzed5obfj7ztzgjcbxtbxdlbgk3pa66/lib;/home/dantopa/spacktivity/Sci
+          entific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libicon
+          v-1.16-i645o7phebjxxqimmqaw74sbn2dcqkcb/lib;/home/dantopa/spacktivity
+          /Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/lib
+          xt-1.1.5-e3jhcdlhtjye6sngcm2myevgay22k6wi/lib;/home/dantopa/spacktivi
+          ty/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/l
+          ibice-1.0.9-qredskq5qo6yxsynuuxzjjgkpb4xyhms/lib;/home/dantopa/spackt
+          ivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.
+          1/libsm-1.2.2-xnb6lfhipfth7pn6aee5gdlcw2oepls5/lib;/home/dantopa/spac
+          ktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.
+          3.1/libx11-1.6.7-qrnxlihmfjpx3hfss5hiqevpse2s6xgc/lib;/home/dantopa/s
+          packtivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc
+          -7.3.1/kbproto-1.0.7-qobyddafa7msvn5xjhnjzdlztalpcufj/lib;/home/danto
+          pa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell
+          /gcc-7.3.1/libxcb-1.13-tzpyaakkwobl5awkl54nj7rsyd2fokvf/lib;/home/dan
+          topa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswe
+          ll/gcc-7.3.1/libpthread-stubs-0.4-a2u3qvcvsv2hkfpilkm5y3pia4qaem3m/li
+          b;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-
+          rhel6-haswell/gcc-7.3.1/libxau-1.0.8-wga5ruzazpphuf27frbmezcithbu3fad
+          /lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/lin
+          ux-rhel6-haswell/gcc-7.3.1/xproto-7.0.31-lekttijkonnavjnj3m6adce2kauz
+          oej6/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack
+          /linux-rhel6-haswell/gcc-7.3.1/libxdmcp-1.1.2-cdcioomaxpoihikdpxea64y
+          3gxcaqldn/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/
+          spack/linux-rhel6-haswell/gcc-7.3.1/xextproto-7.3.0-b77pkdo4ffonnldw2
+          6bo222uyblduzk7/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spac
+          k/opt/spack/linux-rhel6-haswell/gcc-7.3.1/mesa-18.3.6-hotbintqjazg4w4
+          exnqdz5dfq5giuyxk/lib;/home/dantopa/spacktivity/Scientific-Linux-6.sp
+          ack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libxext-1.3.3-ti2l5isu44s
+          jtjbpvzm4pm3pfwlrklzo/lib;/home/dantopa/spacktivity/Scientific-Linux-
+          6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/llvm-9.0.0-lzjjn6fee7
+          nm2agh46b7upwlhlakyubo/lib;/home/dantopa/spacktivity/Scientific-Linux
+          -6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/binutils-2.33.1-ho32
+          l4mxozxjt6pejgcxybyopkwqh5zc/lib;/home/dantopa/spacktivity/Scientific
+          -Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/gettext-0.20.1
+          -wk6vix7c5qonnkirzguhbovroqgyinow/lib;/home/dantopa/spacktivity/Scien
+          tific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/ncurses-6
+          .1-bg2fgpnhlpmgrpqfcwnzxvvcekuhska7/lib;/usr/lib;/home/dantopa/spackt
+          ivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.
+          1/libedit-3.1-20170329-3lvgebxflgaduzbytwhr2dqm7jmjrayq/lib;/home/dan
+          topa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswe
+          ll/gcc-7.3.1/pcre-8.42-tzdaeraqdx2zzorsxmhgoyi25s5um2m5/lib;/home/dan
+          topa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswe
+          ll/gcc-7.3.1/netcdf-c-4.7.3-ehz5ovt5xsyseplf2s7edbveuod3mlq2/lib;/hom
+          e/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-
+          haswell/gcc-7.3.1/hdf5-1.10.6-fskytiryzcqa2nm6qkjpblcfdcw3z4za/lib;/h
+          ome/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel
+          6-haswell/gcc-7.3.1/openmpi-3.1.5-m6oh65yd65dnetlt637enq2el2eoy2hn/li
+          b;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-
+          rhel6-haswell/gcc-7.3.1/hwloc-1.11.11-xng7h334tvz77fyczf2w43vfsqla3wc
+          n/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/li
+          nux-rhel6-haswell/gcc-7.3.1/libpciaccess-0.13.5-zksjc37owumssavmluvkc
+          jftcq6awuec/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spack/op
+          t/spack/linux-rhel6-haswell/gcc-7.3.1/numactl-2.0.12-qjxbbk62gwcolxuz
+          hb6hmi3kfcxrbk5w/lib;/home/dantopa/spacktivity/Scientific-Linux-6.spa
+          ck/opt/spack/linux-rhel6-haswell/gcc-7.3.1/libjpeg-turbo-2.0.3-blu7in
+          7xcsq3ercg5ypc52fzlrxo6ojc/lib64;/usr/lib64' '-DCMAKE_PREFIX_PATH:STR
+          ING=/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linu
+          x-rhel6-haswell/gcc-7.3.1/bzip2-1.0.8-ra2oqvey7ue73bjnjure3fpxuxemj2v
+          i;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-
+          rhel6-haswell/gcc-7.3.1/zlib-1.2.11-536svlrers5olrwqwbh3hkjpqpisem6n;
+          /home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rh
+          el6-haswell/gcc-7.3.1/cmake-3.16.2-spxvb3wwanebgtaaq3erfqklay3kpvqg;/
+          home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhe
+          l6-haswell/gcc-7.3.1/libxml2-2.9.9-xvzed5obfj7ztzgjcbxtbxdlbgk3pa66;/
+          home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhe
+          l6-haswell/gcc-7.3.1/libtiff-4.0.10-ptywfxm6yc3vmltvpxhyhf7uoj4vrnbe;
+          /home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rh
+          el6-haswell/gcc-7.3.1/freetype-2.10.1-si6meqkrfrj2w6xzgxs5xcdhqmbw2gz
+          e;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-
+          rhel6-haswell/gcc-7.3.1/openmpi-3.1.5-m6oh65yd65dnetlt637enq2el2eoy2h
+          n;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-
+          rhel6-haswell/gcc-7.3.1/libxt-1.1.5-e3jhcdlhtjye6sngcm2myevgay22k6wi;
+          /home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rh
+          el6-haswell/gcc-7.3.1/libjpeg-turbo-2.0.3-blu7in7xcsq3ercg5ypc52fzlrx
+          o6ojc;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/li
+          nux-rhel6-haswell/gcc-7.3.1/libpng-1.6.37-2sicyksn5jh2jxq324qz75qr4hc
+          dfpwi;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/li
+          nux-rhel6-haswell/gcc-7.3.1/mesa-18.3.6-hotbintqjazg4w4exnqdz5dfq5giu
+          yxk;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linu
+          x-rhel6-haswell/gcc-7.3.1/expat-2.2.9-27wfackbyndluglxxrqjsrdyizm3egv
+          q;/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-
+          rhel6-haswell/gcc-7.3.1/netcdf-c-4.7.3-ehz5ovt5xsyseplf2s7edbveuod3ml
+          q2' '-DPARAVIEW_BUILD_QT_GUI:BOOL=OFF' '-DVTK_OPENGL_HAS_OSMESA:BOOL=
+          OFF' '-DVTK_USE_X:BOOL=ON' '-DVTK_RENDERING_BACKEND:STRING=OpenGL2' '
+          -DPARAVIEW_INSTALL_DEVELOPMENT_FILES:BOOL=ON' '-DBUILD_TESTING:BOOL=O
+          FF' '-DBUILD_EXAMPLES:BOOL=OFF' '-DVTK_USE_SYSTEM_FREETYPE:BOOL=ON' '
+          -DVTK_USE_SYSTEM_HDF5:BOOL=OFF' '-DVTK_USE_SYSTEM_JPEG:BOOL=ON' '-DVT
+          K_USE_SYSTEM_LIBXML2:BOOL=ON' '-DVTK_USE_SYSTEM_NETCDF:BOOL=ON' '-DVT
+          K_USE_SYSTEM_EXPAT:BOOL=ON' '-DVTK_USE_SYSTEM_TIFF:BOOL=ON' '-DVTK_US
+          E_SYSTEM_ZLIB:BOOL=ON' '-DVTK_USE_SYSTEM_PNG:BOOL=ON' '-DOpenGL_GL_PR
+          EFERENCE:STRING=LEGACY' '-DPARAVIEW_ENABLE_PYTHON:BOOL=OFF' '-DPARAVI
+          EW_USE_MPI:BOOL=ON' '-DMPIEXEC:FILEPATH=/home/dantopa/spacktivity/Sci
+          entific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/openmpi
+          -3.1.5-m6oh65yd65dnetlt637enq2el2eoy2hn/bin/mpiexec' '-DMPI_CXX_COMPI
+          LER:PATH=/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack
+          /linux-rhel6-haswell/gcc-7.3.1/openmpi-3.1.5-m6oh65yd65dnetlt637enq2e
+          l2eoy2hn/bin/mpic++' '-DMPI_C_COMPILER:PATH=/home/dantopa/spacktivity
+          /Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/ope
+          nmpi-3.1.5-m6oh65yd65dnetlt637enq2el2eoy2hn/bin/mpicc' '-DMPI_Fortran
+          _COMPILER:PATH=/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt
+          /spack/linux-rhel6-haswell/gcc-7.3.1/openmpi-3.1.5-m6oh65yd65dnetlt63
+          7enq2el2eoy2hn/bin/mpif90' '-DPARAVIEW_BUILD_SHARED_LIBS:BOOL=ON' '-D
+          PARAVIEW_USE_CUDA:BOOL=OFF'
+  >> 3    cmake: error while loading shared libraries: libssl.so.1.1: cannot op
+          en shared object file: No such file or directory
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx/spack-build-out.txt
+
+root@dc9bad58d882:Scientific-Linux-6.spack $ find / -name libssl.so*
+/usr/lib64/libssl.so.1.0.1e
+/usr/lib64/libssl.so.10
+/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/openssl-1.1.1d-u56lbakyzr5ffze2fne5ougz7jkn3bbs/lib/libssl.so
+/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/openssl-1.1.1d-u56lbakyzr5ffze2fne5ougz7jkn3bbs/lib/libssl.so.1.1
+l.so.1.1 /usr/lib64/libssl.so.1.1x-6.spack $ ln -s /home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/openssl-1.1.1d-u56lbakyzr5ffze2fne5ougz7jkn3bbs/lib/libss
+root@dc9bad58d882:Scientific-Linux-6.spack $
+
+  >> 3    cmake: error while loading shared libraries: libcrypto.so.1.1: cannot
+           open shared object file: No such file or directory
+
+See build log for details:
+  /tmp/root/spack-stage/spack-stage-paraview-5.7.0-ufkkcw4747nw3bmjhnagef6zulvuu7qx/spack-build-out.txt
+
+root@dc9bad58d882:Scientific-Linux-6.spack $ find / -name libcrypto.so.1.1
+/home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/openssl-1.1.1d-u56lbakyzr5ffze2fne5ougz7jkn3bbs/lib/libcrypto.so.1.1
+ypto.so.1.1 /usr/lib64/libcrypto.so.1.1ack $ ln -s /home/dantopa/spacktivity/Scientific-Linux-6.spack/opt/spack/linux-rhel6-haswell/gcc-7.3.1/openssl-1.1.1d-u56lbakyzr5ffze2fne5ougz7jkn3bbs/lib/libcr
