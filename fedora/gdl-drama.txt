@@ -1,0 +1,28 @@
+root@1b6b0b0671e9:bin $ spack install gdl % gcc@9.2.1
+==> Error: An unsatisfiable variant constraint has been detected for spec:
+
+    ncurses@6.1%gcc@9.2.1~symlinks~termlib arch=linux-fedora31-haswell
+        ^pkgconf@1.6.3%gcc@9.2.1 arch=linux-fedora31-haswell
+
+
+while trying to concretize the partial spec:
+
+    llvm@6:
+        ^cmake@3.16.2%gcc@9.2.1~doc+ncurses+openssl+ownlibs~qt arch=linux-fedora31-haswell
+            ^ncurses@6.1%gcc@9.2.1~symlinks~termlib arch=linux-fedora31-haswell
+                ^pkgconf@1.6.3%gcc@9.2.1 arch=linux-fedora31-haswell
+            ^openssl@1.1.1d%gcc@9.2.1+systemcerts arch=linux-fedora31-haswell
+                ^perl@5.30.1%gcc@9.2.1+cpanm+shared+threads arch=linux-fedora31-haswell
+                    ^gdbm@1.18.1%gcc@9.2.1 arch=linux-fedora31-haswell
+                        ^readline@8.0%gcc@9.2.1 arch=linux-fedora31-haswell
+                ^zlib@1.2.11%gcc@9.2.1+optimize+pic+shared arch=linux-fedora31-haswell
+        ^perl-data-dumper
+
+
+llvm requires ncurses variant +termlib, but spec asked for ~termlib
+root@1b6b0b0671e9:bin $ spack install ncurses+termlib % gcc@9.2.1
+==> ncurses is already installed in /home/dantopa/scratch/spacktivity/fedora-spack/opt/spack/linux-fedora31-haswell/gcc-9.2.1/ncurses-6.1-gxucqbnbfdzyttebowj55uufo6v2w5xn
+==> ncurses@6.1 : marking the package explicit
+root@1b6b0b0671e9:bin $ spack install gdl ^ncurses/gxucqbnbfdzytt % gcc@9.2.1
+==> Error: local variable 'spack' referenced before assignment
+root@1b6b0b0671e9:bin $ spack install gdl % gcc@9.2.1 ^ncurses/gxucqbnbfdzytt
