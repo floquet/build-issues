@@ -1,0 +1,54 @@
+llvm-flang package.py line 168
+    def cmake_args(self):
+        spec = self.spec
+        # universal
+        args = [
+            '-DLLVM_ENABLE_RTTI:BOOL=ON',
+            '-DLLVM_ENABLE_EH:BOOL=ON',
+            '-DCLANG_DEFAULT_OPENMP_RUNTIME:STRING=libomp',
+        ]
+        args.append('-DPYTHON_EXECUTABLE={0}'.format(
+            spec['python'].command.path))
+        print ("type(arg):")
+        print (type(arg))
+        for i in arg:
+            print (i)
+
+type(args):
+<class 'list'>
+-DLLVM_ENABLE_RTTI:BOOL=ON
+-DLLVM_ENABLE_EH:BOOL=ON
+-DCLANG_DEFAULT_OPENMP_RUNTIME:STRING=libomp
+-DPYTHON_EXECUTABLE=/home/dantopa/spacktivity/ubuntu-novus-ordo/opt/spack/linux-ubuntu20.04-haswell/gcc-9.3.0/python-3.8.2-4xp7hdwalap4t7xrqpghv26tgvxatvyw/bin/python3.8
+-DFLANG_LLVM_EXTENSIONS=ON
+
+
+    @run_after("install")
+    def post_install(self):
+        print ("type(arg):")
+        print (type(arg))
+        for i in arg:
+            print (i)
+
+
+==> 41119: llvm-flang: Building llvm-flang [CMakePackage]
+type(args):
+<class 'list'>
+-DLLVM_ENABLE_RTTI:BOOL=ON
+-DLLVM_ENABLE_EH:BOOL=ON
+-DCLANG_DEFAULT_OPENMP_RUNTIME:STRING=libomp
+-DPYTHON_EXECUTABLE=/home/dantopa/spacktivity/ubuntu-novus-ordo/opt/spack/linux-ubuntu20.04-haswell/gcc-9.3.0/python-3.8.2-4xp7hdwalap4t7xrqpghv26tgvxatvyw/bin/python3.8
+-DFLANG_LLVM_EXTENSIONS=ON
+==> 41119: llvm-flang: Executing phase: 'cmake'
+==> 41119: llvm-flang: Executing phase: 'build'
+==> 41119: llvm-flang: Executing phase: 'install'
+==> Error: NameError: name 'args' is not defined
+
+/home/dantopa/spacktivity/ubuntu-novus-ordo/var/spack/repos/builtin/packages/llvm-flang/package.py:220, in post_install:
+        217    def post_install(self):
+        218        global args
+        219        print ("type(args):")
+  >>    220        print (type(args))
+        221        for i in args:
+        222            print (i)
+        223
